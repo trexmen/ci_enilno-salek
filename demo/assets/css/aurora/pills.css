@@ -1,0 +1,136 @@
+.nav-pills > li > a {
+	position:relative;
+	overflow:hidden;
+	color:#fdfdfd;
+	background-color: rgba(242,242,242,0.1);
+	border:2px solid rgba(216,216,216,0.2);
+	border-radius:12px;
+	-webkit-transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+	-ms-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+}
+.nav-pills > li > a:hover, 
+.nav-pills > li > a:focus {
+	background-color: rgba(216,216,216,0.4);
+	border-color: rgba(216,216,216,0.4);
+}
+.nav-pills > li.active > a, 
+.nav-pills > li.active > a:hover, 
+.nav-pills > li.active > a:focus {
+	background-color: rgba(148,148,148,0.7);
+	border-color: rgba(148,148,148,0.9);
+}
+
+.nav-pills.pills-primary > li > a {
+	background-color: rgba(79,112,196,0.1);
+	border-color: rgba(79,112,196,0.2);
+}
+.nav-pills.pills-primary > li > a:hover, 
+.nav-pills.pills-primary > li > a:focus {
+	background-color: rgba(79,112,196,0.4);
+	border-color: rgba(79,112,196,0.4);
+}
+.nav-pills.pills-primary > li.active > a, 
+.nav-pills.pills-primary > li.active > a:hover, 
+.nav-pills.pills-primary > li.active > a:focus {
+	background-color: rgba(79,112,196,0.7);
+	border-color: rgba(79,112,196,0.9);
+}
+
+.nav-pills.pills-success > li > a {
+	background-color: rgba(39,174,96,0.1);
+	border-color: rgba(39,174,96,0.2);
+}
+.nav-pills.pills-success > li > a:hover, 
+.nav-pills.pills-success > li > a:focus {
+	background-color: rgba(39,174,96,0.4);
+	border-color: rgba(39,174,96,0.4);
+}
+.nav-pills.pills-success > li.active > a, 
+.nav-pills.pills-success > li.active > a:hover, 
+.nav-pills.pills-success > li.active > a:focus {
+	background-color: rgba(39,174,96,0.7);
+	border-color: rgba(39,174,96,0.9);
+}
+
+.nav-pills.pills-warning > li > a {
+	background-color: rgba(230,126,34,0.1);
+	border-color: rgba(230,126,34,0.2);
+}
+.nav-pills.pills-warning > li > a:hover, 
+.nav-pills.pills-warning > li > a:focus {
+	background-color: rgba(230,126,34,0.4);
+	border-color: rgba(230,126,34,0.4);
+}
+.nav-pills.pills-warning > li.active > a, 
+.nav-pills.pills-warning > li.active > a:hover, 
+.nav-pills.pills-warning > li.active > a:focus {
+	background-color: rgba(230,126,34,0.7);
+	border-color: rgba(230,126,34,0.9);
+}
+
+.nav-pills.pills-warning-alt > li > a {
+	background-color: rgba(241,196,15,0.1);
+	border-color: rgba(241,196,15,0.2);
+}
+.nav-pills.pills-warning-alt > li > a:hover, 
+.nav-pills.pills-warning-alt > li > a:focus {
+	background-color: rgba(241,196,15,0.4);
+	border-color: rgba(241,196,15,0.4);
+}
+.nav-pills.pills-warning-alt > li.active > a, 
+.nav-pills.pills-warning-alt > li.active > a:hover, 
+.nav-pills.pills-warning-alt > li.active > a:focus {
+	background-color: rgba(241,196,15,0.7);
+	border-color: rgba(241,196,15,0.9);
+}
+
+.nav-pills.pills-danger > li > a {
+	background-color: rgba(231,76,60,0.1);
+	border-color: rgba(231,76,60,0.2);
+}
+.nav-pills.pills-danger > li > a:hover, 
+.nav-pills.pills-danger > li > a:focus {
+	background-color: rgba(231,76,60,0.4);
+	border-color: rgba(231,76,60,0.4);
+}
+.nav-pills.pills-danger > li.active > a, 
+.nav-pills.pills-danger > li.active > a:hover, 
+.nav-pills.pills-danger > li.active > a:focus {
+	background-color: rgba(231,76,60,0.7);
+	border-color: rgba(231,76,60,0.9);
+}
+
+.nav-pills.pills-info > li > a {
+	background-color: rgba(166,184,122,0.1);
+	border-color: rgba(166,184,122,0.2);
+}
+.nav-pills.pills-info > li > a:hover, 
+.nav-pills.pills-info > li > a:focus {
+	background-color: rgba(166,184,122,0.4);
+	border-color: rgba(166,184,122,0.4);
+}
+.nav-pills.pills-info > li.active > a, 
+.nav-pills.pills-info > li.active > a:hover, 
+.nav-pills.pills-info > li.active > a:focus {
+	background-color: rgba(166,184,122,0.7);
+	border-color: rgba(166,184,122,0.9);
+}
+
+.nav-pills.pills-inverse > li > a {
+	background-color: rgba(35,48,60,0.1);
+	border-color: rgba(35,48,60,0.8);
+}
+.nav-pills.pills-inverse > li > a:hover, 
+.nav-pills.pills-inverse > li > a:focus {
+	background-color: rgba(35,48,60,0.4);
+	border-color: rgba(35,48,60,0.8);
+}
+.nav-pills.pills-inverse > li.active > a, 
+.nav-pills.pills-inverse > li.active > a:hover, 
+.nav-pills.pills-inverse > li.active > a:focus {
+	background-color: rgba(35,48,60,0.7);
+	border-color: rgba(35,48,60,0.9);
+}

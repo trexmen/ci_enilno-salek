@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Modal - Aurora 1.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="assets/css/styles.css" rel="stylesheet" media="screen">
+		<link href="assets/css/aurora/layout-1.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		
+		<!-- top navbar -->
+		<nav class="navbar navbar-primary navbar-heading" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1c">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="glyphicon glyphicon-align-justify"></i>
+				</button>
+				<a class="navbar-brand" href="#">Aurora 1.0</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1c">			
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Dashboard</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="typography.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Typography</span></a>
+							</li>
+							<li>
+								<a href="css-tables.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tables</span></a>
+							</li>
+							<li>
+								<a href="css-forms.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Forms</span></a>
+							</li>
+							<li>
+								<a href="css-buttons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Buttons & Dropdowns</span></a>
+							</li>
+							<li>
+								<a href="css-images.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Images</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="glyphicons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Glyphicons</span></a>
+							</li>
+							<li>
+								<a href="navs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navs</span></a>
+							</li>
+							<li>
+								<a href="navbar.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navbar</span></a>
+							</li>
+							<li>
+								<a href="breadcrumbs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Breadcrumbs & Pagination</span></a>
+							</li>
+							<li>
+								<a href="label-alerts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Label, Badges, Alerts, Progress Bars</span></a>
+							</li>
+							<li>
+								<a href="containers.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Containers</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active">
+								<a href="modal.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Modal</span></a>
+							</li>
+							<li>
+								<a href="tooltip-popover.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tooltip, popover</span></a>
+							</li>
+							<li>
+								<a href="collapse.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Collapse</span></a>
+							</li>
+							<li>
+								<a href="charts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Charts & Map</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-danger">Search</button>
+				</form>				
+			</div>
+		</nav>
+		<!-- ./ top navbar -->
+		
+		<!-- left sidebar -->
+		<section class="sidebar">
+			<div class="sidebar-heading hidden-xs hidden-sm">
+				<div class="hex-wrapper">
+					<div class="hexagon hexagon-sm">
+						<div class="hexagon-wrap">
+							<a href="#" class="hexagon-inner" style="background-image: url(sample-images/elang-th-02.jpg);"></a>
+						</div>
+					</div>
+					<h3 class="sidebar-title">Rains Peter</h3>
+					<small>administrator</small>
+					<a href="#" class="btn btn-primary btn-sm">profile</a> 
+					<a href="#" class="btn btn-danger btn-sm">settings</a> 
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<!-- sidebar main menu -->
+			<div class="list-group list-group-info list-group-menu">
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-cog rm"></i><span>Settings</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-calendar rm"></i><span>Events</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-comment rm"></i><span>Comments</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-envelope rm"></i><span>Inbox</span>
+				</a>
+			</div>
+			<!-- ./ sidebar main menu -->
+			
+			<!-- sidebar other menu -->
+			<div class="list-group list-group-danger hidden-xs hidden-sm">
+				<div class="list-group-heading">
+					<span class="title">Online friends</span>
+				</div>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online busy"></i>
+					<img src="sample-images/jeun-th-01.jpg" alt="Geunevere" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Geunevere</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online available"></i>
+					<img src="sample-images/elang-th-01.jpg" alt="Elang" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Elang</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online away"></i>
+					<img src="sample-images/jeun-elang-th-01.jpg" alt="Seraphiel" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Seraphiel</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+			</div>
+			<!-- ./ sidebar other menu -->
+			
+		</section>
+		<!-- ./ left sidebar -->
+		
+		<!-- main content -->
+		<section class="main-content">
+			<div class="page-heading">
+				<h1 class="caption">Modal</h1>
+				<i class="glyphicon glyphicon-list-alt"></i>
+				<!-- <ul class="nav nav-tabs">
+					<li><a href="containers.html">List group</a></li>
+					<li><a href="containers-media-object.html">Media object</a></li>
+					<li class="active"><a href="containers-panel.html">Panel</a></li>
+				</ul> -->
+			</div>
+			<div class="wrapper">
+				<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Launch demo modal</a>
+				<hr />
+				<div class="modal modal-sample">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal modal-primary modal-sample">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal modal-success modal-sample">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal modal-warning modal-sample">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal modal-warning-alt modal-sample">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal modal-danger modal-sample">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal modal-info modal-sample">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal modal-inverse modal-sample">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- ./ main content -->
+		
+		<div id="myModal" class="modal modal-success fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						<p>Cliquishly less ouch shuffled prodigiously from testy and before after oafishly without besides tamarin cattily childish proud unselfishly yikes and alas lucrative more darn struck manatee buffalo blanched overabundantly a notwithstanding needless plankton.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="assets/bootstrap/js/jquery.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/jquery.nice-file-input.js"></script>
+		<script src="assets/js/selectize.min.js"></script>
+		<script src="assets/js/jquery.icheck.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/pikaday.js"></script>
+		<script src="assets/js/pikaday.jquery.js"></script>
+		<script src="assets/js/spectrum.js"></script>
+		<script src="assets/js/jquery.fs.stepper.min.js"></script>
+		<script src="assets/js/jquery.texteditor.js"></script>
+		<script src="assets/js/jquery.nouislider.min.js"></script>
+		<script src="assets/js/Chart.js"></script>
+		<script src="assets/js/leaflet/leaflet.js"></script>
+		<script src="assets/js/loader.js"></script>
+		<script src="assets/js/samples.js"></script>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+.label,
+.badge {
+	font-family:Arial,san-serif;
+	font-weight:normal;
+}
+.label-primary,.badge-primary {
+	background-color: #2064af;
+}
+.label-success,.badge-success {
+	background-color: #229b55;
+}
+.label-info,.badge-info {
+	background-color: #94a46d;
+}
+.label-warning,.badge-warning {
+	background-color: #cd701e;
+}
+.label-warning-alt,.badge-warning-alt {
+	background-color: #f0ad4e;
+}
+.label-danger,.badge-danger {
+	background-color: #ce4335;
+}
+.label-inverse,.badge-inverse {
+	background-color: #2e4154;
+}
+
+.alert {
+	border-radius: 0;
+}
+.alert-success {
+	color: #a3efc3;
+	background-color: #1d8348;
+	border-color: #1d8348;
+}
+.alert-info {
+	color: #d2dcb7;
+	background-color: #717d52;
+	border-color: #717d52;
+}
+.alert-warning {
+	color: #f2d0b2;
+	background-color: #b1621d;
+	border-color: #b1621d;
+}
+.alert-danger {
+	color: #f9c6c1;
+	background-color: #b1392d;
+	border-color: #b1392d;
+}
+.alert-link {
+	color: #f2f2f2!important;
+}
+
+.progress {
+	background-color: rgba(0,0,0,0.14);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	border-radius:0;
+}
+.progress-bar {
+	background-color: #2064af;
+}
+.progress-bar-success {
+	background-color: #229b55;
+}
+.progress-bar-info {
+	background-color: #94a46d;
+}
+.progress-bar-warning {
+	background-color: #cd701e;
+}
+.progress-bar-danger {
+	background-color: #ce4335;
+}

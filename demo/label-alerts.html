@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Label, Badges, Alerts, Progress Bars - Aurora 1.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="assets/css/styles.css" rel="stylesheet" media="screen">
+		<link href="assets/css/aurora/layout-1.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		
+		<!-- top navbar -->
+		<nav class="navbar navbar-primary navbar-heading" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1c">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="glyphicon glyphicon-align-justify"></i>
+				</button>
+				<a class="navbar-brand" href="#">Aurora 1.0</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1c">			
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Dashboard</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="typography.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Typography</span></a>
+							</li>
+							<li>
+								<a href="css-tables.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tables</span></a>
+							</li>
+							<li>
+								<a href="css-forms.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Forms</span></a>
+							</li>
+							<li>
+								<a href="css-buttons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Buttons & Dropdowns</span></a>
+							</li>
+							<li>
+								<a href="css-images.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Images</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="glyphicons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Glyphicons</span></a>
+							</li>
+							<li>
+								<a href="navs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navs</span></a>
+							</li>
+							<li>
+								<a href="navbar.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navbar</span></a>
+							</li>
+							<li>
+								<a href="breadcrumbs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Breadcrumbs & Pagination</span></a>
+							</li>
+							<li class="active">
+								<a href="label-alerts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Label, Badges, Alerts, Progress Bars</span></a>
+							</li>
+							<li>
+								<a href="containers.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Containers</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="modal.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Modal</span></a>
+							</li>
+							<li>
+								<a href="tooltip-popover.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tooltip, popover</span></a>
+							</li>
+							<li>
+								<a href="collapse.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Collapse</span></a>
+							</li>
+							<li>
+								<a href="charts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Charts & Map</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-danger">Search</button>
+				</form>				
+			</div>
+		</nav>
+		<!-- ./ top navbar -->
+		
+		<!-- left sidebar -->
+		<section class="sidebar">
+			<div class="sidebar-heading hidden-xs hidden-sm">
+				<div class="hex-wrapper">
+					<div class="hexagon hexagon-sm">
+						<div class="hexagon-wrap">
+							<a href="#" class="hexagon-inner" style="background-image: url(sample-images/elang-th-02.jpg);"></a>
+						</div>
+					</div>
+					<h3 class="sidebar-title">Rains Peter</h3>
+					<small>administrator</small>
+					<a href="#" class="btn btn-primary btn-sm">profile</a> 
+					<a href="#" class="btn btn-danger btn-sm">settings</a> 
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<!-- sidebar main menu -->
+			<div class="list-group list-group-info list-group-menu">
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-cog rm"></i><span>Settings</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-calendar rm"></i><span>Events</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-comment rm"></i><span>Comments</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-envelope rm"></i><span>Inbox</span>
+				</a>
+			</div>
+			<!-- ./ sidebar main menu -->
+			
+			<!-- sidebar other menu -->
+			<div class="list-group list-group-danger hidden-xs hidden-sm">
+				<div class="list-group-heading">
+					<span class="title">Online friends</span>
+				</div>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online busy"></i>
+					<img src="sample-images/jeun-th-01.jpg" alt="Geunevere" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Geunevere</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online available"></i>
+					<img src="sample-images/elang-th-01.jpg" alt="Elang" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Elang</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online away"></i>
+					<img src="sample-images/jeun-elang-th-01.jpg" alt="Seraphiel" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Seraphiel</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+			</div>
+			<!-- ./ sidebar other menu -->
+			
+		</section>
+		<!-- ./ left sidebar -->
+		
+		<!-- main content -->
+		<section class="main-content">
+			<div class="page-heading">
+				<h1 class="caption">Label, Badges, Alerts, Progress Bars</h1>
+				<i class="glyphicon glyphicon-list-alt"></i>
+			</div>
+			<div class="wrapper">
+				<div class="row">
+					<div class="col-md-12 col-lg-12">
+						<h3>Labels</h3>
+						<span class="label label-default">Default</span>
+						<span class="label label-primary">Primary</span>
+						<span class="label label-success">Success</span>
+						<span class="label label-info">Info</span>
+						<span class="label label-warning">Warning</span>
+						<span class="label label-warning-alt">Warning alt</span>
+						<span class="label label-danger">Danger</span>
+						<span class="label label-inverse">Inverse</span>
+					</div>
+					<div class="col-md-12 col-lg-12">
+						<h3>Badges</h3>
+						<span class="badge badge-default">42</span>
+						<span class="badge badge-primary">42</span>
+						<span class="badge badge-success">42</span>
+						<span class="badge badge-info">42</span>
+						<span class="badge badge-warning">42</span>
+						<span class="badge badge-warning-alt">42</span>
+						<span class="badge badge-danger">42</span>
+						<span class="badge badge-inverse">42</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						<h3>Alerts</h3>
+						<div class="alert alert-success">
+							<strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+						</div>
+						
+						<div class="alert alert-info">
+							<strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+						</div>
+						
+						<div class="alert alert-warning">
+							<strong>Warning!</strong> Best check yo self, you're <a href="#" class="alert-link">not looking too good</a>.
+						</div>
+						
+						<div class="alert alert-danger">
+							<strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<h3>Progress Bars</h3>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60% Complete</span>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+								<span class="sr-only">40% Complete (success)</span>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+								<span class="sr-only">20% Complete</span>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+								<span class="sr-only">60% Complete (warning)</span>
+							</div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+								<span class="sr-only">80% Complete</span>
+							</div>
+						</div>
+						
+						<div class="progress progress-striped">
+							<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+								<span class="sr-only">60% Complete</span>
+							</div>
+						</div>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+								<span class="sr-only">40% Complete (success)</span>
+							</div>
+						</div>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+								<span class="sr-only">20% Complete</span>
+							</div>
+						</div>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+								<span class="sr-only">60% Complete (warning)</span>
+							</div>
+						</div>
+						<div class="progress progress-striped">
+							<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+								<span class="sr-only">80% Complete</span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- ./ main content -->
+
+		<script src="assets/bootstrap/js/jquery.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/jquery.nice-file-input.js"></script>
+		<script src="assets/js/selectize.min.js"></script>
+		<script src="assets/js/jquery.icheck.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/pikaday.js"></script>
+		<script src="assets/js/pikaday.jquery.js"></script>
+		<script src="assets/js/spectrum.js"></script>
+		<script src="assets/js/jquery.fs.stepper.min.js"></script>
+		<script src="assets/js/jquery.texteditor.js"></script>
+		<script src="assets/js/jquery.nouislider.min.js"></script>
+		<script src="assets/js/Chart.js"></script>
+		<script src="assets/js/leaflet/leaflet.js"></script>
+		<script src="assets/js/loader.js"></script>
+		<script src="assets/js/samples.js"></script>
+	</body>
+</html>

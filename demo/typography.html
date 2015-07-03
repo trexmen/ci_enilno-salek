@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Typography - Aurora 1.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="assets/css/styles.css" rel="stylesheet" media="screen">
+		<link href="assets/css/aurora/layout-1.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		
+		<!-- top navbar -->
+		<nav class="navbar navbar-primary navbar-heading" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1c">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="glyphicon glyphicon-align-justify"></i>
+				</button>
+				<a class="navbar-brand" href="#">Aurora 1.0</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1c">			
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Dashboard</a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active">
+								<a href="typography.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Typography</span></a>
+							</li>
+							<li>
+								<a href="css-tables.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tables</span></a>
+							</li>
+							<li>
+								<a href="css-forms.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Forms</span></a>
+							</li>
+							<li>
+								<a href="css-buttons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Buttons & Dropdowns</span></a>
+							</li>
+							<li>
+								<a href="css-images.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Images</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="glyphicons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Glyphicons</span></a>
+							</li>
+							<li>
+								<a href="navs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navs</span></a>
+							</li>
+							<li>
+								<a href="navbar.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navbar</span></a>
+							</li>
+							<li>
+								<a href="breadcrumbs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Breadcrumbs & Pagination</span></a>
+							</li>
+							<li>
+								<a href="label-alerts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Label, Badges, Alerts, Progress Bars</span></a>
+							</li>
+							<li>
+								<a href="containers.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Containers</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="modal.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Modal</span></a>
+							</li>
+							<li>
+								<a href="tooltip-popover.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tooltip, popover</span></a>
+							</li>
+							<li>
+								<a href="collapse.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Collapse</span></a>
+							</li>
+							<li>
+								<a href="charts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Charts & Map</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-danger">Search</button>
+				</form>				
+			</div>
+		</nav>
+		<!-- ./ top navbar -->
+		
+		<!-- left sidebar -->
+		<section class="sidebar">
+			<div class="sidebar-heading hidden-xs hidden-sm">
+				<div class="hex-wrapper">
+					<div class="hexagon hexagon-sm">
+						<div class="hexagon-wrap">
+							<a href="#" class="hexagon-inner" style="background-image: url(sample-images/elang-th-02.jpg);"></a>
+						</div>
+					</div>
+					<h3 class="sidebar-title">Rains Peter</h3>
+					<small>administrator</small>
+					<a href="#" class="btn btn-primary btn-sm">profile</a> 
+					<a href="#" class="btn btn-danger btn-sm">settings</a> 
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<!-- sidebar main menu -->
+			<div class="list-group list-group-info list-group-menu">
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-cog rm"></i><span>Settings</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-calendar rm"></i><span>Events</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-comment rm"></i><span>Comments</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-envelope rm"></i><span>Inbox</span>
+				</a>
+			</div>
+			<!-- ./ sidebar main menu -->
+			
+			<!-- sidebar other menu -->
+			<div class="list-group list-group-danger hidden-xs hidden-sm">
+				<div class="list-group-heading">
+					<span class="title">Online friends</span>
+				</div>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online busy"></i>
+					<img src="sample-images/jeun-th-01.jpg" alt="Geunevere" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Geunevere</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online available"></i>
+					<img src="sample-images/elang-th-01.jpg" alt="Elang" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Elang</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online away"></i>
+					<img src="sample-images/jeun-elang-th-01.jpg" alt="Seraphiel" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Seraphiel</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+			</div>
+			<!-- ./ sidebar other menu -->
+			
+		</section>
+		<!-- ./ left sidebar -->
+		
+		<!-- main content -->
+		<section class="main-content">
+			<div class="page-heading">
+				<h1 class="caption">Typography</h1>
+				<i class="glyphicon glyphicon-list-alt"></i>
+			</div>
+			<div class="wrapper">
+			
+				<div class="panel panel-transparent panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Headings</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-4 col-lg-4">
+								<h1>H1 Heading</h1>
+								<h2>H2 Heading</h2>
+								<h3>H3 Heading</h3>
+								<h4>H4 Heading</h4>
+								<h5>H5 Heading</h5>
+								<h6>H6 Heading</h6>
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<h1 class="heading-alt1">H1 Heading</h1>
+								<h2 class="heading-alt1">H2 Heading</h2>
+								<h3 class="heading-alt1">H3 Heading</h3>
+								<h4 class="heading-alt1">H4 Heading</h4>
+								<h5 class="heading-alt1">H5 Heading</h5>
+								<h6 class="heading-alt1">H6 Heading</h6>
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<h1 class="heading-alt2">H1 Heading</h1>
+								<h2 class="heading-alt2">H2 Heading</h2>
+								<h3 class="heading-alt2">H3 Heading</h3>
+								<h4 class="heading-alt2">H4 Heading</h4>
+								<h5 class="heading-alt2">H5 Heading</h5>
+								<h6 class="heading-alt2">H6 Heading</h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-transparent panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Paragraph With Multiple Columns</h3>
+					</div>
+					<div class="panel-body">
+					
+						<div class="alert alert-warning">
+							<b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-count property.
+						</div>
+						
+						<h3>2 Columns</h3>
+						<div class="column column-2">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+						</div>
+						<hr>
+						
+						<h3>3 Columns</h3>
+						<div class="column column-3">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+						</div>
+						<hr>
+						
+						<h3>4 Columns</h3>
+						<div class="column column-4">
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+						</div>
+					</div>
+				</div>
+				
+				<div id="tile-panel" class="row row-masonry">
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Lead</h3>
+							</div>
+							<div class="panel-body">
+								<p class="lead">Lorem ipsum tempus pulvinar eros faucibus ut venenatis phasellus non tempus porttitor, tortor eleifend vestibulum sollicitudin viverra magna potenti donec ad tristique, ligula enim mattis vestibulum luctus ligula non dapibus nam morbi.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Jumbotron</h3>
+							</div>
+							<div class="panel-body">
+								<div class="jumbotron">
+									<div class="container">
+										<h1>Hello!!!!</h1>
+										<p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+										<p><a class="btn btn-primary btn-lg">Learn more</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Emphasis</h3>
+							</div>
+							<div class="panel-body">
+								<p class="text-muted"><strong>Muted</strong>: Lorem ipsum tempus pulvinar eros faucibus ut venenatis phasellus non tempus porttitor.</p>
+								
+								<p class="text-primary"><strong>Primary</strong>: Lorem ipsum tempus pulvinar eros faucibus ut venenatis phasellus non tempus porttitor.</p>
+								
+								<p class="text-success"><strong>Success</strong>: Lorem ipsum tempus pulvinar eros faucibus ut venenatis phasellus non tempus porttitor.</p>
+								
+								<p class="text-info"><strong>Info</strong>: Lorem ipsum tempus pulvinar eros faucibus ut venenatis phasellus non tempus porttitor.</p>
+								
+								<p class="text-warning"><strong>Warning</strong>: Lorem ipsum tempus pulvinar eros faucibus ut venenatis phasellus non tempus porttitor.</p>
+								
+								<p class="text-danger"><strong>Danger</strong>: Lorem ipsum tempus pulvinar eros faucibus ut venenatis phasellus non tempus porttitor.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Blockquotes</h3>
+							</div>
+							<div class="panel-body">
+								<blockquote>
+									<p>Curae habitant augue suspendisse ullamcorper at ullamcorper commodo vel aliquam at, imperdiet platea vel posuere habitasse maecenas fames vulputate ipsum vivamus.</p>
+									<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+								</blockquote>
+								
+								<hr />
+								
+								<blockquote class="pull-right">
+									<p>Curae habitant augue suspendisse ullamcorper at ullamcorper commodo vel aliquam at, imperdiet platea vel posuere habitasse maecenas fames vulputate ipsum vivamus.</p>
+									<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+								</blockquote>
+								<div class="clearfix"></div>
+								
+								<hr />
+								
+								<blockquote class="text-muted">
+									<p>Curae habitant augue suspendisse ullamcorper at ullamcorper commodo vel aliquam at, imperdiet platea vel posuere habitasse maecenas fames vulputate ipsum vivamus.</p>
+									<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+								</blockquote>
+								
+								<hr />
+								
+								<blockquote class="text-success">
+									<p>Curae habitant augue suspendisse ullamcorper at ullamcorper commodo vel aliquam at, imperdiet platea vel posuere habitasse maecenas fames vulputate ipsum vivamus.</p>
+									<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+								</blockquote>
+								
+								<hr />
+								
+								<blockquote class="text-warning">
+									<p>Curae habitant augue suspendisse ullamcorper at ullamcorper commodo vel aliquam at, imperdiet platea vel posuere habitasse maecenas fames vulputate ipsum vivamus.</p>
+									<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+								</blockquote>
+								
+								<hr />
+								
+								<blockquote class="text-danger">
+									<p>Curae habitant augue suspendisse ullamcorper at ullamcorper commodo vel aliquam at, imperdiet platea vel posuere habitasse maecenas fames vulputate ipsum vivamus.</p>
+									<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+								</blockquote>
+								<div class="clearfix"></div>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Unordered list</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ul>
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+											<li>Vestibulum laoreet porttitor sem</li>
+											<li>Ac tristique libero volutpat at</li>
+										</ul>
+									</li>
+									<li>Faucibus porta lacus fringilla vel</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Ol, Decimal</h3>
+							</div>
+							<div class="panel-body">
+								<ol>
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ol>
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+											<li>Vestibulum laoreet porttitor sem</li>
+											<li>Ac tristique libero volutpat at</li>
+										</ol>
+									</li>
+									<li>Faucibus porta lacus fringilla vel</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Ol, Decimal Leading Zero</h3>
+							</div>
+							<div class="panel-body">
+								<ol class="ol-decimal-leading-zero">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ol>
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+											<li>Vestibulum laoreet porttitor sem</li>
+											<li>Ac tristique libero volutpat at</li>
+										</ol>
+									</li>
+									<li>Faucibus porta lacus fringilla vel</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Ol, Binary</h3>
+							</div>
+							<div class="panel-body">
+								<ol class="ol-binary">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ol>
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+											<li>Vestibulum laoreet porttitor sem</li>
+											<li>Ac tristique libero volutpat at</li>
+										</ol>
+									</li>
+									<li>Faucibus porta lacus fringilla vel</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Ol, Upper Roman</h3>
+							</div>
+							<div class="panel-body">
+								<ol class="ol-upper-roman">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ol>
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+											<li>Vestibulum laoreet porttitor sem</li>
+											<li>Ac tristique libero volutpat at</li>
+										</ol>
+									</li>
+									<li>Faucibus porta lacus fringilla vel</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Ol, Lower Roman</h3>
+							</div>
+							<div class="panel-body">
+								<ol class="ol-lower-roman">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ol>
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+											<li>Vestibulum laoreet porttitor sem</li>
+											<li>Ac tristique libero volutpat at</li>
+										</ol>
+									</li>
+									<li>Faucibus porta lacus fringilla vel</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Ol, Upper Alpha</h3>
+							</div>
+							<div class="panel-body">
+								<ol class="ol-upper-alpha">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ol>
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+											<li>Vestibulum laoreet porttitor sem</li>
+											<li>Ac tristique libero volutpat at</li>
+										</ol>
+									</li>
+									<li>Faucibus porta lacus fringilla vel</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Ol, Lower Alpha</h3>
+							</div>
+							<div class="panel-body">
+								<ol class="ol-lower-alpha">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ol>
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+											<li>Vestibulum laoreet porttitor sem</li>
+											<li>Ac tristique libero volutpat at</li>
+										</ol>
+									</li>
+									<li>Faucibus porta lacus fringilla vel</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+									<li>Aenean sit amet erat nunc</li>
+									<li>Eget porttitor lorem</li>
+									<li>Aenean sit amet erat nunc</li>
+								</ol>								
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Description List</h3>
+							</div>
+							<div class="panel-body">
+								<dl>
+									<dt>Description lists</dt>
+									<dd>A description list is perfect for defining terms.</dd>
+									<dt>Euismod</dt>
+									<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+									<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+									<dt>Malesuada porta</dt>
+									<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-6 col-masonry">
+						<div class="panel panel-transparent panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Horizontal description list</h3>
+							</div>
+							<div class="panel-body">
+								<dl class="dl-horizontal">
+									<dt>Description lists</dt>
+									<dd>A description list is perfect for defining terms.</dd>
+									<dt>Euismod</dt>
+									<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+									<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+									<dt>Malesuada porta</dt>
+									<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+									<dt>Felis euismod semper eget lacinia</dt>
+									<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+					
+				</div>				
+			</div>
+		</section>
+		<!-- ./ main content -->
+
+		<script src="assets/bootstrap/js/jquery.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/jquery.nice-file-input.js"></script>
+		<script src="assets/js/selectize.min.js"></script>
+		<script src="assets/js/jquery.icheck.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/pikaday.js"></script>
+		<script src="assets/js/pikaday.jquery.js"></script>
+		<script src="assets/js/spectrum.js"></script>
+		<script src="assets/js/jquery.fs.stepper.min.js"></script>
+		<script src="assets/js/jquery.texteditor.js"></script>
+		<script src="assets/js/jquery.nouislider.min.js"></script>
+		<script src="assets/js/Chart.js"></script>
+		<script src="assets/js/leaflet/leaflet.js"></script>
+		<script src="assets/js/loader.js"></script>
+		<script src="assets/js/samples.js"></script>
+	</body>
+</html>

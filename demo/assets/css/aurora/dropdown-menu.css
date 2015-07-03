@@ -1,0 +1,80 @@
+.dropdown-menu {
+	border-width:2px;
+	border-radius:0;
+	min-width:210px;
+}
+.dropdown-header {
+	font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.dropdown-menu > li > a > i {
+	float:left;
+	margin:0 10px 0 -5px;
+}
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus,
+.dropdown-menu > .active > a, 
+.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a:focus {
+	background-color: #454545;
+	outline: 0;
+}
+.dropdown-menu.dropdown-primary {border-color:#2064af;}
+.dropdown-menu.dropdown-primary > li > a:hover, 
+.dropdown-menu.dropdown-primary > li > a:focus,
+.dropdown-menu.dropdown-primary > .active > a, 
+.dropdown-menu.dropdown-primary > .active > a:hover, 
+.dropdown-menu.dropdown-primary > .active > a:focus {
+	background-color: #2064af;
+}
+.dropdown-menu.dropdown-success {border-color:#229b55;}
+.dropdown-menu.dropdown-success > li > a:hover, 
+.dropdown-menu.dropdown-success > li > a:focus,
+.dropdown-menu.dropdown-success > .active > a, 
+.dropdown-menu.dropdown-success > .active > a:hover, 
+.dropdown-menu.dropdown-success > .active > a:focus {
+	background-color: #229b55;
+}
+.dropdown-menu.dropdown-warning {border-color:#e67e22;}
+.dropdown-menu.dropdown-warning > li > a:hover, 
+.dropdown-menu.dropdown-warning > li > a:focus,
+.dropdown-menu.dropdown-warning > .active > a, 
+.dropdown-menu.dropdown-warning > .active > a:hover, 
+.dropdown-menu.dropdown-warning > .active > a:focus {
+	background-color: #e67e22;
+}
+.dropdown-menu.dropdown-warning-alt {border-color:#f1c40f;}
+.dropdown-menu.dropdown-warning-alt > li > a:hover, 
+.dropdown-menu.dropdown-warning-alt > li > a:focus,
+.dropdown-menu.dropdown-warning-alt > .active > a, 
+.dropdown-menu.dropdown-warning-alt > .active > a:hover, 
+.dropdown-menu.dropdown-warning-alt > .active > a:focus {
+	background-color: #f1c40f;
+}
+.dropdown-menu.dropdown-danger {border-color:#ce4335;}
+.dropdown-menu.dropdown-danger > li > a:hover, 
+.dropdown-menu.dropdown-danger > li > a:focus,
+.dropdown-menu.dropdown-danger > .active > a, 
+.dropdown-menu.dropdown-danger > .active > a:hover, 
+.dropdown-menu.dropdown-danger > .active > a:focus {
+	background-color: #ce4335;
+}
+.dropdown-menu.dropdown-info {border-color:#a6b87a;}
+.dropdown-menu.dropdown-info > li > a:hover, 
+.dropdown-menu.dropdown-info > li > a:focus,
+.dropdown-menu.dropdown-info > .active > a, 
+.dropdown-menu.dropdown-info > .active > a:hover, 
+.dropdown-menu.dropdown-info > .active > a:focus {
+	background-color: #a6b87a;
+}
+.dropdown-menu.dropdown-inverse {border-color:#34495e;}
+.dropdown-menu.dropdown-inverse > li > a:hover, 
+.dropdown-menu.dropdown-inverse > li > a:focus,
+.dropdown-menu.dropdown-inverse > .active > a, 
+.dropdown-menu.dropdown-inverse > .active > a:hover, 
+.dropdown-menu.dropdown-inverse > .active > a:focus {
+	background-color: #34495e;
+}
+

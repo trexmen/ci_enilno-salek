@@ -1,0 +1,457 @@
+.breadcrumbs-custom{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #eee;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #ccc;
+	box-shadow: 0 0 2px rgba(0,0,0,.2);
+	overflow: hidden;
+	width: 100%;
+	margin-bottom:15px;
+}
+
+.breadcrumbs-custom li{
+	float: left;
+}
+
+.breadcrumbs-custom a{
+	padding: .7em 1em .7em 2em;
+	float: left;
+	text-decoration: none;
+	color: #444;
+	position: relative;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	background-color: #ddd;
+	font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
+	font-weight: normal;
+	font-size:18px;
+}
+
+.breadcrumbs-custom li:first-child a{
+	padding-left: 1em;
+}
+
+.breadcrumbs-custom a:hover{
+	background: #fff;
+}
+
+.breadcrumbs-custom a::after,
+.breadcrumbs-custom a::before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -1.5em;   
+	border-top: 1.5em solid transparent;
+	border-bottom: 1.5em solid transparent;
+	border-left: 1em solid;
+	right: -1em;
+}
+
+.breadcrumbs-custom a::after{ 
+	z-index: 2;
+	border-left-color: #ddd;  
+}
+
+.breadcrumbs-custom a::before{
+	border-left-color: #ccc;  
+	right: -1.1em;
+	z-index: 1; 
+}
+
+.breadcrumbs-custom a:hover::after{
+	border-left-color: #fff;
+}
+
+.breadcrumbs-custom.breadcrumbs-primary{
+	background-color: #2470c4;
+	border-color: #1d5899;
+}
+.breadcrumbs-custom.breadcrumbs-primary a{
+	color: #fdfdfd;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	background-color: #2064af;
+}
+.breadcrumbs-custom.breadcrumbs-primary a::after{
+	border-left-color: #2064af;
+}
+.breadcrumbs-custom.breadcrumbs-primary a::before{
+	border-left-color: #1d5899;
+}
+.breadcrumbs-custom.breadcrumbs-primary a:hover{
+	background: #64a3e8;
+	color: #1d5899;
+	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+.breadcrumbs-custom.breadcrumbs-primary a:hover::after{
+	border-left-color: #64a3e8;
+}
+.breadcrumbs-custom.breadcrumbs-success{
+	background-color: #27ae60;
+	border-color: #1d8348;
+}
+.breadcrumbs-custom.breadcrumbs-success a{
+	color: #fdfdfd;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	background-color: #229b55;
+}
+.breadcrumbs-custom.breadcrumbs-success a::after{
+	border-left-color: #229b55;
+}
+.breadcrumbs-custom.breadcrumbs-success a::before{
+	border-left-color: #1d8348;
+}
+.breadcrumbs-custom.breadcrumbs-success a:hover{
+	background: #85c9a2;
+	color: #1d8348;
+	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+.breadcrumbs-custom.breadcrumbs-success a:hover::after{
+	border-left-color: #85c9a2;
+}
+.breadcrumbs-custom.breadcrumbs-warning{
+	background-color: #e67e22;
+	border-color: #b1621d;
+}
+.breadcrumbs-custom.breadcrumbs-warning a{
+	color: #fdfdfd;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	background-color: #cd701e;
+}
+.breadcrumbs-custom.breadcrumbs-warning a::after{
+	border-left-color: #cd701e;
+}
+.breadcrumbs-custom.breadcrumbs-warning a::before{
+	border-left-color: #b1621d;
+}
+.breadcrumbs-custom.breadcrumbs-warning a:hover{
+	background: #e6af7e;
+	color: #b1621d;
+	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+.breadcrumbs-custom.breadcrumbs-warning a:hover::after{
+	border-left-color: #e6af7e;
+}
+.breadcrumbs-custom.breadcrumbs-warning-alt{
+	background-color: #f1c40f;
+	border-color: #b69510;
+}
+.breadcrumbs-custom.breadcrumbs-warning-alt a{
+	color: #fdfdfd;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	background-color: #d7af0d;
+}
+.breadcrumbs-custom.breadcrumbs-warning-alt a::after{
+	border-left-color: #d7af0d;
+}
+.breadcrumbs-custom.breadcrumbs-warning-alt a::before{
+	border-left-color: #b69510;
+}
+.breadcrumbs-custom.breadcrumbs-warning-alt a:hover{
+	background: #f5d969;
+	color: #b69510;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.breadcrumbs-custom.breadcrumbs-warning-alt a:hover::after{
+	border-left-color: #f5d969;
+}
+.breadcrumbs-custom.breadcrumbs-danger{
+	background-color: #e74c3c;
+	border-color: #b1392d;
+}
+.breadcrumbs-custom.breadcrumbs-danger a{
+	color: #fdfdfd;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	background-color: #ce4335;
+}
+.breadcrumbs-custom.breadcrumbs-danger a::after{
+	border-left-color: #ce4335;
+}
+.breadcrumbs-custom.breadcrumbs-danger a::before{
+	border-left-color: #b1392d;
+}
+.breadcrumbs-custom.breadcrumbs-danger a:hover{
+	background: #e7938b;
+	color: #b1392d;
+	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+.breadcrumbs-custom.breadcrumbs-danger a:hover::after{
+	border-left-color: #e7938b;
+}
+.breadcrumbs-custom.breadcrumbs-info{
+	background-color: #a6b87a;
+	border-color: #717d52;
+}
+.breadcrumbs-custom.breadcrumbs-info a{
+	color: #fdfdfd;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	background-color: #94a46d;
+}
+.breadcrumbs-custom.breadcrumbs-info a::after{
+	border-left-color: #94a46d;
+}
+.breadcrumbs-custom.breadcrumbs-info a::before{
+	border-left-color: #717d52;
+}
+.breadcrumbs-custom.breadcrumbs-info a:hover{
+	background: #c6cdb3;
+	color: #717d52;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.breadcrumbs-custom.breadcrumbs-info a:hover::after{
+	border-left-color: #c6cdb3;
+}
+.breadcrumbs-custom.breadcrumbs-inverse{
+	background-color: #34495e;
+	border-color: #1e2a36;
+}
+.breadcrumbs-custom.breadcrumbs-inverse a{
+	color: #fdfdfd;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);
+	background-color: #2e4154;
+}
+.breadcrumbs-custom.breadcrumbs-inverse a::after{
+	border-left-color: #2e4154;
+}
+.breadcrumbs-custom.breadcrumbs-inverse a::before{
+	border-left-color: #1e2a36;
+}
+.breadcrumbs-custom.breadcrumbs-inverse a:hover{
+	background: #7a8795;
+	color: #1e2a36;
+	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+.breadcrumbs-custom.breadcrumbs-inverse a:hover::after{
+	border-left-color: #7a8795;
+}
+
+.breadcrumbs-custom .current,
+.breadcrumbs-custom .current:hover{
+	color: #fdfdfd!important;
+	text-shadow: 0 1px 0 rgba(0,0,0,.3)!important;
+	background: none!important;
+}
+.breadcrumbs-custom.breadcrumbs-default .current,
+.breadcrumbs-custom.breadcrumbs-default .current:hover{
+	color: #444!important;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5)!important;
+}
+.breadcrumbs-custom .current::after,
+.breadcrumbs-custom .current::before{
+	content: normal;  
+}
+
+.pagination {
+	border-radius: 0;
+}
+.pagination>li:first-child>a, 
+.pagination>li:first-child>span {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+.pagination>li:last-child>a, 
+.pagination>li:last-child>span {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+	background-color: #f2f2f2;
+	border-color: #d8d8d8;
+	color:#454545;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.pagination>li>a:hover, 
+.pagination>li>span:hover, 
+.pagination>li>a:focus, 
+.pagination>li>span:focus {
+	background-color: #a6a6a6;
+	border-color: #949494;
+	color: #f2f2f2;
+}
+.pagination>.active>a, 
+.pagination>.active>span, 
+.pagination>.active>a:hover, 
+.pagination>.active>span:hover, 
+.pagination>.active>a:focus, 
+.pagination>.active>span:focus {
+	color: #f2f2f2;
+	background-color: #949494;
+	border-color: #949494;
+}
+
+.pagination.pagination-primary>li>a,
+.pagination.pagination-primary>li>span {
+	background-color: #2470c4;
+	border-color: #2064af;
+	color:#f2f2f2;
+}
+.pagination.pagination-primary>li>a:hover, 
+.pagination.pagination-primary>li>span:hover, 
+.pagination.pagination-primary>li>a:focus, 
+.pagination.pagination-primary>li>span:focus {
+	background-color: #1d5899;
+	border-color: #1d5899;
+}
+.pagination.pagination-primary>.active>a, 
+.pagination.pagination-primary>.active>span, 
+.pagination.pagination-primary>.active>a:hover, 
+.pagination.pagination-primary>.active>span:hover, 
+.pagination.pagination-primary>.active>a:focus, 
+.pagination.pagination-primary>.active>span:focus {
+	background-color: #2064af;
+	border-color: #2064af;
+}
+
+.pagination.pagination-success>li>a,
+.pagination.pagination-success>li>span {
+	background-color: #27ae60;
+	border-color: #229b55;
+	color:#f2f2f2;
+}
+.pagination.pagination-success>li>a:hover, 
+.pagination.pagination-success>li>span:hover, 
+.pagination.pagination-success>li>a:focus, 
+.pagination.pagination-success>li>span:focus {
+	background-color: #1d8348;
+	border-color: #1d8348;
+}
+.pagination.pagination-success>.active>a, 
+.pagination.pagination-success>.active>span, 
+.pagination.pagination-success>.active>a:hover, 
+.pagination.pagination-success>.active>span:hover, 
+.pagination.pagination-success>.active>a:focus, 
+.pagination.pagination-success>.active>span:focus {
+	background-color: #229b55;
+	border-color: #229b55;
+}
+
+.pagination.pagination-warning>li>a,
+.pagination.pagination-warning>li>span {
+	background-color: #e67e22;
+	border-color: #cd701e;
+	color:#f2f2f2;
+}
+.pagination.pagination-warning>li>a:hover, 
+.pagination.pagination-warning>li>span:hover, 
+.pagination.pagination-warning>li>a:focus, 
+.pagination.pagination-warning>li>span:focus {
+	background-color: #b1621d;
+	border-color: #b1621d;
+}
+.pagination.pagination-warning>.active>a, 
+.pagination.pagination-warning>.active>span, 
+.pagination.pagination-warning>.active>a:hover, 
+.pagination.pagination-warning>.active>span:hover, 
+.pagination.pagination-warning>.active>a:focus, 
+.pagination.pagination-warning>.active>span:focus {
+	background-color: #cd701e;
+	border-color: #cd701e;
+}
+
+.pagination.pagination-warning-alt>li>a,
+.pagination.pagination-warning-alt>li>span {
+	background-color: #f1c40f;
+	border-color: #d7af0d;
+	color:#f2f2f2;
+}
+.pagination.pagination-warning-alt>li>a:hover, 
+.pagination.pagination-warning-alt>li>span:hover, 
+.pagination.pagination-warning-alt>li>a:focus, 
+.pagination.pagination-warning-alt>li>span:focus {
+	background-color: #b69510;
+	border-color: #b69510;
+}
+.pagination.pagination-warning-alt>.active>a, 
+.pagination.pagination-warning-alt>.active>span, 
+.pagination.pagination-warning-alt>.active>a:hover, 
+.pagination.pagination-warning-alt>.active>span:hover, 
+.pagination.pagination-warning-alt>.active>a:focus, 
+.pagination.pagination-warning-alt>.active>span:focus {
+	background-color: #d7af0d;
+	border-color: #d7af0d;
+}
+
+.pagination.pagination-danger>li>a,
+.pagination.pagination-danger>li>span {
+	background-color: #e74c3c;
+	border-color: #ce4335;
+	color:#f2f2f2;
+}
+.pagination.pagination-danger>li>a:hover, 
+.pagination.pagination-danger>li>span:hover, 
+.pagination.pagination-danger>li>a:focus, 
+.pagination.pagination-danger>li>span:focus {
+	background-color: #b1392d;
+	border-color: #b1392d;
+}
+.pagination.pagination-danger>.active>a, 
+.pagination.pagination-danger>.active>span, 
+.pagination.pagination-danger>.active>a:hover, 
+.pagination.pagination-danger>.active>span:hover, 
+.pagination.pagination-danger>.active>a:focus, 
+.pagination.pagination-danger>.active>span:focus {
+	background-color: #ce4335;
+	border-color: #ce4335;
+}
+
+.pagination.pagination-info>li>a,
+.pagination.pagination-info>li>span {
+	background-color: #a6b87a;
+	border-color: #94a46d;
+	color:#f2f2f2;
+}
+.pagination.pagination-info>li>a:hover, 
+.pagination.pagination-info>li>span:hover, 
+.pagination.pagination-info>li>a:focus, 
+.pagination.pagination-info>li>span:focus {
+	background-color: #717d52;
+	border-color: #717d52;
+}
+.pagination.pagination-info>.active>a, 
+.pagination.pagination-info>.active>span, 
+.pagination.pagination-info>.active>a:hover, 
+.pagination.pagination-info>.active>span:hover, 
+.pagination.pagination-info>.active>a:focus, 
+.pagination.pagination-info>.active>span:focus {
+	background-color: #94a46d;
+	border-color: #94a46d;
+}
+
+.pagination.pagination-inverse>li>a,
+.pagination.pagination-inverse>li>span {
+	background-color: #34495e;
+	border-color: #2e4154;
+	color:#f2f2f2;
+}
+.pagination.pagination-inverse>li>a:hover, 
+.pagination.pagination-inverse>li>span:hover, 
+.pagination.pagination-inverse>li>a:focus, 
+.pagination.pagination-inverse>li>span:focus {
+	background-color: #1e2a36;
+	border-color: #1e2a36;
+}
+.pagination.pagination-inverse>.active>a, 
+.pagination.pagination-inverse>.active>span, 
+.pagination.pagination-inverse>.active>a:hover, 
+.pagination.pagination-inverse>.active>span:hover, 
+.pagination.pagination-inverse>.active>a:focus, 
+.pagination.pagination-inverse>.active>span:focus {
+	background-color: #2e4154;
+	border-color: #2e4154;
+}
+
+.pagination>.disabled>span, 
+.pagination>.disabled>a, 
+.pagination>.disabled>a:hover, 
+.pagination>.disabled>a:focus {
+	color: #efefef!important;
+	background-color: #ccc!important;
+	border-color: #ccc!important;
+}

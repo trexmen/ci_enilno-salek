@@ -1,0 +1,253 @@
+.hexagon {
+	width: 110px;
+	height: 210px;
+	margin:-40px 5px -20px 5px;
+	display:inline-block;
+	float:left;
+	position:relative;
+	overflow: hidden;
+	visibility: hidden;
+
+	-webkit-transform: rotate(120deg);
+	-moz-transform: rotate(120deg);
+	-o-transform: rotate(120deg);
+	-ms-transform: rotate(120deg);
+	transform: rotate(120deg);
+}
+
+.hexagon-xs {
+	margin:-50px 5px -40px 5px;
+	width: 50px;
+	height: 150px;
+}
+
+.hexagon-sm {
+	margin:-50px 5px -30px 5px;
+	width: 80px;
+	height: 180px;
+}
+
+.hexagon-lg {
+	margin:-30px 5px -20px 5px;
+	width: 140px;
+	height: 240px;
+}
+
+.hexagon-wrap {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position:relative;
+	background-color:#454545;
+
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+.hexagon-inner, a.hexagon-inner {
+	position:relative;
+	display:block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50%;
+
+	-webkit-background-size: 125%;
+	-moz-background-size: 125%;
+	background-size: 125%;
+	visibility: visible;
+
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.hexagon-inner:hover {text-decoration:none;}
+.hexagon-inner i{
+	display:block;
+	z-index:30;
+	font-size:40px;
+	line-height:210px;
+	text-align:center;
+	top:-2px;
+	margin:0;
+	padding:0;
+}
+.hexagon-xs .hexagon-inner i {
+	font-size:20px;
+	line-height:150px;
+}
+.hexagon-sm .hexagon-inner i {
+	font-size:30px;
+	line-height:170px;
+}
+.hexagon-lg .hexagon-inner i {
+	font-size:50px;
+	line-height:220px;
+}
+.hexagon-inner:hover { }
+
+.hexagon.hexagon-default .hexagon-inner {
+	background-color:rgba(242,242,242,0.45);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-default .hexagon-inner:hover {
+	background-color:rgba(242,242,242,0.75);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-default:active .hexagon-inner, 
+.hexagon.hexagon-default.active .hexagon-inner, 
+.hexagon.hexagon-default.active:hover .hexagon-inner {
+	background-color: rgba(242,242,242,0.9);
+	color:#454545;
+}
+
+.hexagon.hexagon-primary .hexagon-inner {
+	background-color:rgba(79,112,196,0.45);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-primary .hexagon-inner:hover {
+	background-color:rgba(79,112,196,0.75);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-primary:active .hexagon-inner, 
+.hexagon.hexagon-primary.active .hexagon-inner, 
+.hexagon.hexagon-primary.active:hover .hexagon-inner {
+	background-color: rgba(79,112,196,0.9);
+	color:#fdfdfd;
+}
+
+.hexagon.hexagon-success .hexagon-inner {
+	background-color:rgba(39,174,96,0.45);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-success .hexagon-inner:hover {
+	background-color:rgba(39,174,96,0.75);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-success:active .hexagon-inner, 
+.hexagon.hexagon-success.active .hexagon-inner, 
+.hexagon.hexagon-success.active:hover .hexagon-inner {
+	background-color: rgba(39,174,96,0.9);
+	color:#fdfdfd;
+}
+
+.hexagon.hexagon-warning .hexagon-inner {
+	background-color:rgba(230,126,34,0.45);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-warning .hexagon-inner:hover {
+	background-color:rgba(230,126,34,0.75);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-warning:active .hexagon-inner, 
+.hexagon.hexagon-warning.active .hexagon-inner, 
+.hexagon.hexagon-warning.active:hover .hexagon-inner {
+	background-color: rgba(230,126,34,0.9);
+	color:#fdfdfd;
+}
+
+.hexagon.hexagon-warning-alt .hexagon-inner {
+	background-color:rgba(241,196,15,0.45);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-warning-alt .hexagon-inner:hover {
+	background-color:rgba(241,196,15,0.75);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-warning-alt:active .hexagon-inner, 
+.hexagon.hexagon-warning-alt.active .hexagon-inner, 
+.hexagon.hexagon-warning-alt.active:hover .hexagon-inner {
+	background-color: rgba(241,196,15,0.9);
+	color:#fdfdfd;
+}
+
+.hexagon.hexagon-danger .hexagon-inner {
+	background-color:rgba(231,76,60,0.45);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-danger .hexagon-inner:hover {
+	background-color:rgba(231,76,60,0.75);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-danger:active .hexagon-inner, 
+.hexagon.hexagon-danger.active .hexagon-inner, 
+.hexagon.hexagon-danger.active:hover .hexagon-inner {
+	background-color: rgba(231,76,60,0.9);
+	color:#fdfdfd;
+}
+
+.hexagon.hexagon-inverse .hexagon-inner {
+	background-color:rgba(35,48,60,0.45);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-inverse .hexagon-inner:hover {
+	background-color:rgba(35,48,60,0.75);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-inverse:active .hexagon-inner, 
+.hexagon.hexagon-inverse.active .hexagon-inner, 
+.hexagon.hexagon-inverse.active:hover .hexagon-inner {
+	background-color: rgba(35,48,60,0.9);
+	color:#fdfdfd;
+}
+
+.hexagon.hexagon-info .hexagon-inner {
+	background-color:rgba(166,184,122,0.45);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-info .hexagon-inner:hover {
+	background-color:rgba(166,184,122,0.75);
+	color:#fdfdfd;
+}
+.hexagon.hexagon-info:active .hexagon-inner, 
+.hexagon.hexagon-info.active .hexagon-inner, 
+.hexagon.hexagon-info.active:hover .hexagon-inner {
+	background-color: rgba(166,184,122,0.9);
+	color:#fdfdfd;
+}
+
+.hexagon-group {
+	display:inline-block;
+	float:left;
+}
+.hexagon-group .group-top, 
+.hexagon-group .group-middle, 
+.hexagon-group .group-bottom{
+	display:block;
+	clear:both;
+	margin:0 0 -10px 0;
+}
+.hexagon-group .group-middle  .hexagon{
+	margin:-82px 5px -65px 5px;
+}
+.hexagon-group .group-top .hexagon:first-child, 
+.hexagon-group .group-bottom .hexagon:first-child{
+	margin-left:65px;
+}
+.hexagon-group .group-middle  .hexagon.hexagon-xs{
+	margin:-60px 5px -50px 5px;
+}
+.hexagon-group .group-top .hexagon.hexagon-xs:first-child, 
+.hexagon-group .group-bottom .hexagon.hexagon-xs:first-child{
+	margin-left:35px;
+}
+.hexagon-group .group-top .hexagon.hexagon-sm:first-child, 
+.hexagon-group .group-bottom .hexagon.hexagon-sm:first-child{
+	margin-left:50px;
+}
+.hexagon-group .group-middle  .hexagon.hexagon-sm{
+	margin:-70px 5px -50px 5px;
+}

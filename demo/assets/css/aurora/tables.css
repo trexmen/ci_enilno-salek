@@ -1,0 +1,137 @@
+.table-bordered {background-color:rgba(255,255,255,0.7); border:1px solid rgba(170,170,170,0.4);}
+.table-bordered > thead > tr > th, 
+.table-bordered > tbody > tr > th, 
+.table-bordered > tfoot > tr > th, 
+.table-bordered > thead > tr > td, 
+.table-bordered > tbody > tr > td, 
+.table-bordered > tfoot > tr > td {
+	border-color: rgba(170,170,170,0.4);
+	color:#454545;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+	background-color: rgba(245,245,245,0.6);
+	border-bottom:0;
+	font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif; 
+	font-weight: normal;
+	font-size:18px;
+}
+.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: rgba(233,233,233,0.5);
+}
+
+.table-bordered.table-primary, 
+.table-bordered.table-primary > thead > tr > th, 
+.table-bordered.table-primary > tbody > tr > th, 
+.table-bordered.table-primary > tfoot > tr > th, 
+.table-bordered.table-primary > thead > tr > td, 
+.table-bordered.table-primary > tbody > tr > td, 
+.table-bordered.table-primary > tfoot > tr > td {
+	border:1px solid rgba(32,100,175,0.28)!important;
+}
+.table-bordered.table-primary > thead > tr > th,
+.table-bordered.table-primary > thead > tr > td {
+	background-color: rgba(36,112,196,0.6);
+	color:#fff;
+}
+.table-primary.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-primary.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: rgba(204,225,249,0.5);
+}
+
+.table-bordered.table-success,
+.table-bordered.table-success > thead > tr > th, 
+.table-bordered.table-success > tbody > tr > th, 
+.table-bordered.table-success > tfoot > tr > th, 
+.table-bordered.table-success > thead > tr > td, 
+.table-bordered.table-success > tbody > tr > td, 
+.table-bordered.table-success > tfoot > tr > td {
+	border:1px solid rgba(34,155,85,0.28)!important;
+}
+.table-bordered.table-success > thead > tr > th,
+.table-bordered.table-success > thead > tr > td {
+	background-color: rgba(39,174,96,0.6);
+	color:#fff;
+}
+.table-success.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-success.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: rgba(207,242,222,0.5);
+}
+
+.table-bordered.table-warning,
+.table-bordered.table-warning > thead > tr > th, 
+.table-bordered.table-warning > tbody > tr > th, 
+.table-bordered.table-warning > tfoot > tr > th, 
+.table-bordered.table-warning > thead > tr > td, 
+.table-bordered.table-warning > tbody > tr > td, 
+.table-bordered.table-warning > tfoot > tr > td {
+	border:1px solid rgba(205,112,30,0.28)!important;
+}
+.table-bordered.table-warning > thead > tr > th,
+.table-bordered.table-warning > thead > tr > td {
+	background-color: rgba(230,126,34,0.6);
+	color:#fff;
+}
+.table-warning.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-warning.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: rgba(251,220,192,0.5);
+}
+
+.table-bordered.table-danger,
+.table-bordered.table-danger > thead > tr > th, 
+.table-bordered.table-danger > tbody > tr > th, 
+.table-bordered.table-danger > tfoot > tr > th, 
+.table-bordered.table-danger > thead > tr > td, 
+.table-bordered.table-danger > tbody > tr > td, 
+.table-bordered.table-danger > tfoot > tr > td {
+	border:1px solid rgba(172,41,37,0.28)!important;
+}
+.table-bordered.table-danger > thead > tr > th,
+.table-bordered.table-danger > thead > tr > td {
+	background-color: rgba(210,50,45,0.6);
+	color:#fff;
+}
+.table-danger.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-danger.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: rgba(249,210,209,0.5);
+}
+
+.table-bordered.table-info,
+.table-bordered.table-info > thead > tr > th, 
+.table-bordered.table-info > tbody > tr > th, 
+.table-bordered.table-info > tfoot > tr > th, 
+.table-bordered.table-info > thead > tr > td, 
+.table-bordered.table-info > tbody > tr > td, 
+.table-bordered.table-info > tfoot > tr > td {
+	border:1px solid rgba(148,164,109,0.28)!important;
+}
+.table-bordered.table-info > thead > tr > th,
+.table-bordered.table-info > thead > tr > td {
+	background-color: rgba(166,184,122,0.6);
+	color:#fff;
+}
+.table-info.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-info.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: rgba(239,247,218,0.5);
+}
+
+.table-bordered.table-inverse,
+.table-bordered.table-inverse > thead > tr > th, 
+.table-bordered.table-inverse > tbody > tr > th, 
+.table-bordered.table-inverse > tfoot > tr > th, 
+.table-bordered.table-inverse > thead > tr > td, 
+.table-bordered.table-inverse > tbody > tr > td, 
+.table-bordered.table-inverse > tfoot > tr > td {
+	border:1px solid rgba(46,65,84,0.28)!important;
+}
+.table-bordered.table-inverse > thead > tr > th,
+.table-bordered.table-inverse > thead > tr > td {
+	background-color: rgba(52,73,94,0.6);
+	color:#fff;
+}
+.table-inverse.table-striped > tbody > tr:nth-child(odd) > td, 
+.table-inverse.table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: rgba(200,212,224,0.5);
+}
+.table > tbody {}

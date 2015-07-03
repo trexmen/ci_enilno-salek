@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms - Aurora 1.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="assets/css/styles.css" rel="stylesheet" media="screen">
+		<link href="assets/css/aurora/layout-1.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		
+		<!-- top navbar -->
+		<nav class="navbar navbar-primary navbar-heading" role="navigation">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1c">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="glyphicon glyphicon-align-justify"></i>
+				</button>
+				<a class="navbar-brand" href="#">Aurora 1.0</a>
+			</div>
+
+			<div class="collapse navbar-collapse navbar-ex1c">			
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Dashboard</a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="typography.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Typography</span></a>
+							</li>
+							<li>
+								<a href="css-tables.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tables</span></a>
+							</li>
+							<li class="active">
+								<a href="css-forms.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Forms</span></a>
+							</li>
+							<li>
+								<a href="css-buttons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Buttons & Dropdowns</span></a>
+							</li>
+							<li>
+								<a href="css-images.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Images</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="glyphicons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Glyphicons</span></a>
+							</li>
+							<li>
+								<a href="navs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navs</span></a>
+							</li>
+							<li>
+								<a href="navbar.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navbar</span></a>
+							</li>
+							<li>
+								<a href="breadcrumbs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Breadcrumbs & Pagination</span></a>
+							</li>
+							<li>
+								<a href="label-alerts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Label, Badges, Alerts, Progress Bars</span></a>
+							</li>
+							<li>
+								<a href="containers.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Containers</span></a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="modal.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Modal</span></a>
+							</li>
+							<li>
+								<a href="tooltip-popover.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tooltip, popover</span></a>
+							</li>
+							<li>
+								<a href="collapse.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Collapse</span></a>
+							</li>
+							<li>
+								<a href="charts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Charts & Map</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-danger">Search</button>
+				</form>				
+			</div>
+		</nav>
+		<!-- ./ top navbar -->
+		
+		<!-- left sidebar -->
+		<section class="sidebar">
+			<div class="sidebar-heading hidden-xs hidden-sm">
+				<div class="hex-wrapper">
+					<div class="hexagon hexagon-sm">
+						<div class="hexagon-wrap">
+							<a href="#" class="hexagon-inner" style="background-image: url(sample-images/elang-th-02.jpg);"></a>
+						</div>
+					</div>
+					<h3 class="sidebar-title">Rains Peter</h3>
+					<small>administrator</small>
+					<a href="#" class="btn btn-primary btn-sm">profile</a> 
+					<a href="#" class="btn btn-danger btn-sm">settings</a> 
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<!-- sidebar main menu -->
+			<div class="list-group list-group-info list-group-menu">
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-cog rm"></i><span>Settings</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-calendar rm"></i><span>Events</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-comment rm"></i><span>Comments</span>
+				</a>
+				<a href="#" class="list-group-item">
+					<i class="glyphicon glyphicon-envelope rm"></i><span>Inbox</span>
+				</a>
+			</div>
+			<!-- ./ sidebar main menu -->
+			
+			<!-- sidebar other menu -->
+			<div class="list-group list-group-danger hidden-xs hidden-sm">
+				<div class="list-group-heading">
+					<span class="title">Online friends</span>
+				</div>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online busy"></i>
+					<img src="sample-images/jeun-th-01.jpg" alt="Geunevere" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Geunevere</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online available"></i>
+					<img src="sample-images/elang-th-01.jpg" alt="Elang" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Elang</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+				<a class="list-group-item custom-1" href="#">
+					<i class="pull-right glyphicon glyphicon-record online away"></i>
+					<img src="sample-images/jeun-elang-th-01.jpg" alt="Seraphiel" class="img-circle img-avatar pull-left mr">
+					<h4 class="user-id">Seraphiel</h4>
+					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
+				</a>
+			</div>
+			<!-- ./ sidebar other menu -->
+			
+		</section>
+		<!-- ./ left sidebar -->
+		
+		<!-- main content -->
+		<section class="main-content">
+			<div class="page-heading">
+				<h1 class="caption">Forms</h1>
+				<i class="glyphicon glyphicon-list-alt"></i>
+			</div>
+			<div class="wrapper">
+				<div class="panel panel-blank">
+					<div class="panel-heading">
+						<h3 class="panel-title">Inline Form</h3>
+					</div>
+					<div class="panel-body">
+						<form class="form-inline" role="form">
+							<div class="form-group">
+								<label class="sr-only" for="exampleInputEmail2">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="exampleInputPassword2">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Remember me
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Sign in</button>
+						</form>
+					</div>
+				</div>
+				
+				<div class="panel panel-blank">
+					<div class="panel-heading">
+						<h3 class="panel-title">Horizontal Form</h3>
+					</div>
+					<div class="panel-body">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label for="inputEmail1" class="col-md-2 col-lg-2 control-label">Email</label>
+								<div class="col-md-10 col-lg-10">
+									<input type="email" class="form-control" id="inputEmail1" placeholder="Email">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword1" class="col-md-2 col-lg-2 control-label">Password</label>
+								<div class="col-md-10 col-lg-10">
+									<input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox"> Remember me
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10">
+									<button type="submit" class="btn btn-primary">Sign in</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="panel panel-blank">
+					<div class="panel-heading">
+						<h3 class="panel-title">Form Controls</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-6 col-lg-6">
+								<label>Text input</label>
+								<input type="text" class="form-control mr" placeholder="Text input">
+								
+								<label>Textarea</label>
+								<textarea class="form-control mr" rows="5"></textarea>
+								
+								<label>Select</label>
+								<select class="form-control mr">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+								
+								<h4>Validation states</h4>
+								<div class="form-group has-success">
+									<label class="control-label" for="inputSuccess">Input with success</label>
+									<input type="text" class="form-control" id="inputSuccess">
+								</div>
+								<div class="form-group has-warning">
+									<label class="control-label" for="inputWarning">Input with warning</label>
+									<input type="text" class="form-control" id="inputWarning">
+								</div>
+								<div class="form-group has-error">
+									<label class="control-label" for="inputError">Input with error</label>
+									<input type="text" class="form-control" id="inputError">
+								</div>
+								
+							</div>
+							
+							<div class="col-md-6 col-lg-6">
+							
+								<label>Height sizing</label>
+								<input class="form-control input-lg mr" type="text" placeholder=".input-lg">
+								<input class="form-control mr" type="text" placeholder="Default input">
+								<input class="form-control input-sm mr" type="text" placeholder=".input-sm">
+							
+								<label>Multiple select</label>
+								<select multiple class="form-control mr">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+								
+								<label>Checkbox and radio</label>
+								<div class="checkbox mr">
+									<label>
+										<input type="checkbox" value="">
+										Option one is this and that&mdash;be sure to include why it's great
+									</label>
+								</div>
+
+								<div class="radio mr">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+										Option one is this and that&mdash;be sure to include why it's great
+									</label>
+								</div>
+
+								<div class="radio mr">
+									<label>
+										<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+										Option two can be something else and selecting it will deselect option one
+									</label>
+								</div>
+
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+								</label>
+								
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+								</label>
+								
+								<label class="checkbox-inline">
+									<input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+								</label>
+								
+								<div class="clearfix" style="margin-bottom:15px;"></div>
+							</div>							
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-blank">
+					<div class="panel-heading">
+						<h3 class="panel-title">Custom Form Controls</h3>
+					</div>
+					<div class="panel-body">
+						<h4>Custom checkbox & radio</h4>
+						<div class="row">
+							<div class="col-md-4 col-lg-4">
+								<label>Red</label>
+								<div class="checkbox icheck icheck-red mr">
+									<label>
+										<input type="checkbox" name="optCheckbox11" id="optCheckbox11" value="optcb11">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-red mr">
+									<label>
+										<input type="checkbox" name="optCheckbox21" id="optCheckbox21" value="optcb21" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-red mr">
+									<label>
+										<input type="checkbox" name="optCheckbox31" id="optCheckbox31" value="optcb31" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-red mr">
+									<label>
+										<input type="checkbox" name="optCheckbox41" id="optCheckbox41" value="optcb41" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-red mr">
+									<label>
+										<input type="radio" name="optRadios11" id="optRadios11" value="optrd11">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-red mr">
+									<label>
+										<input type="radio" name="optRadios11" id="optRadios21" value="optrd21" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-red mr">
+									<label>
+										<input type="radio" name="optRadios21" id="optRadios31" value="optrd31" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-red mr">
+									<label>
+										<input type="radio" name="optRadios21" id="optRadios41" value="optrd41" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<label>Green</label>
+								<div class="checkbox icheck icheck-green mr">
+									<label>
+										<input type="checkbox" name="optCheckbox12" id="optCheckbox12" value="optcb12">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-green mr">
+									<label>
+										<input type="checkbox" name="optCheckbox22" id="optCheckbox22" value="optcb21" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-green mr">
+									<label>
+										<input type="checkbox" name="optCheckbox32" id="optCheckbox32" value="optcb31" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-green mr">
+									<label>
+										<input type="checkbox" name="optCheckbox42" id="optCheckbox42" value="optcb42" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-green mr">
+									<label>
+										<input type="radio" name="optRadios12" id="optRadios12" value="optrd12">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-green mr">
+									<label>
+										<input type="radio" name="optRadios12" id="optRadios22" value="optrd22" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-green mr">
+									<label>
+										<input type="radio" name="optRadios22" id="optRadios32" value="optrd32" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-green mr">
+									<label>
+										<input type="radio" name="optRadios22" id="optRadios42" value="optrd42" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<label>Blue</label>
+								<div class="checkbox icheck icheck-blue mr">
+									<label>
+										<input type="checkbox" name="optCheckbox13" id="optCheckbox13" value="optcb13">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-blue mr">
+									<label>
+										<input type="checkbox" name="optCheckbox23" id="optCheckbox23" value="optcb23" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-blue mr">
+									<label>
+										<input type="checkbox" name="optCheckbox33" id="optCheckbox33" value="optcb33" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-blue mr">
+									<label>
+										<input type="checkbox" name="optCheckbox43" id="optCheckbox43" value="optcb43" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-blue mr">
+									<label>
+										<input type="radio" name="optRadios13" id="optRadios13" value="optrd13">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-blue mr">
+									<label>
+										<input type="radio" name="optRadios13" id="optRadios23" value="optrd23" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-blue mr">
+									<label>
+										<input type="radio" name="optRadios23" id="optRadios33" value="optrd33" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-blue mr">
+									<label>
+										<input type="radio" name="optRadios23" id="optRadios43" value="optrd43" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<label>Aero</label>
+								<div class="checkbox icheck icheck-aero mr">
+									<label>
+										<input type="checkbox" name="optCheckbox14" id="optCheckbox14" value="optcb14">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-aero mr">
+									<label>
+										<input type="checkbox" name="optCheckbox24" id="optCheckbox24" value="optcb24" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-aero mr">
+									<label>
+										<input type="checkbox" name="optCheckbox34" id="optCheckbox34" value="optcb34" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-aero mr">
+									<label>
+										<input type="checkbox" name="optCheckbox44" id="optCheckbox44" value="optcb44" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-aero mr">
+									<label>
+										<input type="radio" name="optRadios14" id="optRadios14" value="optrd14">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-aero mr">
+									<label>
+										<input type="radio" name="optRadios14" id="optRadios24" value="optrd24" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-aero mr">
+									<label>
+										<input type="radio" name="optRadios24" id="optRadios34" value="optrd34" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-aero mr">
+									<label>
+										<input type="radio" name="optRadios24" id="optRadios44" value="optrd44" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<label>Grey</label>
+								<div class="checkbox icheck icheck-grey mr">
+									<label>
+										<input type="checkbox" name="optCheckbox15" id="optCheckbox15" value="optcb15">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-grey mr">
+									<label>
+										<input type="checkbox" name="optCheckbox25" id="optCheckbox25" value="optcb25" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-grey mr">
+									<label>
+										<input type="checkbox" name="optCheckbox35" id="optCheckbox35" value="optcb35" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-grey mr">
+									<label>
+										<input type="checkbox" name="optCheckbox45" id="optCheckbox45" value="optcb45" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-grey mr">
+									<label>
+										<input type="radio" name="optRadios15" id="optRadios15" value="optrd15">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-grey mr">
+									<label>
+										<input type="radio" name="optRadios15" id="optRadios25" value="optrd25" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-grey mr">
+									<label>
+										<input type="radio" name="optRadios25" id="optRadios35" value="optrd35" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-grey mr">
+									<label>
+										<input type="radio" name="optRadios25" id="optRadios45" value="optrd45" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<label>Orange</label>
+								<div class="checkbox icheck icheck-orange mr">
+									<label>
+										<input type="checkbox" name="optCheckbox16" id="optCheckbox16" value="optcb16">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-orange mr">
+									<label>
+										<input type="checkbox" name="optCheckbox26" id="optCheckbox26" value="optcb26" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-orange mr">
+									<label>
+										<input type="checkbox" name="optCheckbox36" id="optCheckbox36" value="optcb36" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-orange mr">
+									<label>
+										<input type="checkbox" name="optCheckbox46" id="optCheckbox46" value="optcb46" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-orange mr">
+									<label>
+										<input type="radio" name="optRadios16" id="optRadios16" value="optrd16">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-orange mr">
+									<label>
+										<input type="radio" name="optRadios16" id="optRadios26" value="optrd26" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-orange mr">
+									<label>
+										<input type="radio" name="optRadios26" id="optRadios36" value="optrd36" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-orange mr">
+									<label>
+										<input type="radio" name="optRadios26" id="optRadios46" value="optrd46" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<label>Yellow</label>
+								<div class="checkbox icheck icheck-yellow mr">
+									<label>
+										<input type="checkbox" name="optCheckbox17" id="optCheckbox17" value="optcb17">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-yellow mr">
+									<label>
+										<input type="checkbox" name="optCheckbox27" id="optCheckbox27" value="optcb27" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-yellow mr">
+									<label>
+										<input type="checkbox" name="optCheckbox37" id="optCheckbox37" value="optcb37" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-yellow mr">
+									<label>
+										<input type="checkbox" name="optCheckbox47" id="optCheckbox47" value="optcb47" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-yellow mr">
+									<label>
+										<input type="radio" name="optRadios17" id="optRadios17" value="optrd17">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-yellow mr">
+									<label>
+										<input type="radio" name="optRadios17" id="optRadios27" value="optrd27" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-yellow mr">
+									<label>
+										<input type="radio" name="optRadios27" id="optRadios37" value="optrd37" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-yellow mr">
+									<label>
+										<input type="radio" name="optRadios27" id="optRadios47" value="optrd47" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<label>Pink</label>
+								<div class="checkbox icheck icheck-pink mr">
+									<label>
+										<input type="checkbox" name="optCheckbox18" id="optCheckbox18" value="optcb18">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-pink mr">
+									<label>
+										<input type="checkbox" name="optCheckbox28" id="optCheckbox28" value="optcb28" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-pink mr">
+									<label>
+										<input type="checkbox" name="optCheckbox38" id="optCheckbox38" value="optcb38" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-pink mr">
+									<label>
+										<input type="checkbox" name="optCheckbox48" id="optCheckbox48" value="optcb48" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-pink mr">
+									<label>
+										<input type="radio" name="optRadios18" id="optRadios18" value="optrd18">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-pink mr">
+									<label>
+										<input type="radio" name="optRadios18" id="optRadios28" value="optrd28" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-pink mr">
+									<label>
+										<input type="radio" name="optRadios28" id="optRadios38" value="optrd38" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-pink mr">
+									<label>
+										<input type="radio" name="optRadios28" id="optRadios48" value="optrd48" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+							<div class="col-md-4 col-lg-4">
+								<label>Purple</label>
+								<div class="checkbox icheck icheck-purple mr">
+									<label>
+										<input type="checkbox" name="optCheckbox19" id="optCheckbox19" value="optcb19">
+										Normal
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-purple mr">
+									<label>
+										<input type="checkbox" name="optCheckbox29" id="optCheckbox29" value="optcb29" checked>
+										Checked
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-purple mr">
+									<label>
+										<input type="checkbox" name="optCheckbox39" id="optCheckbox39" value="optcb39" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="checkbox icheck icheck-purple mr">
+									<label>
+										<input type="checkbox" name="optCheckbox49" id="optCheckbox49" value="optcb49" checked disabled>
+										Disabled checked
+									</label>
+								</div>
+
+								<div class="radio icheck icheck-purple mr">
+									<label>
+										<input type="radio" name="optRadios19" id="optRadios19" value="optrd19">
+										Normal
+									</label>
+								</div>
+								<div class="radio icheck icheck-purple mr">
+									<label>
+										<input type="radio" name="optRadios19" id="optRadios29" value="optrd29" checked>
+										Checked
+									</label>
+								</div>
+								<div class="radio icheck icheck-purple mr">
+									<label>
+										<input type="radio" name="optRadios29" id="optRadios39" value="optrd39" disabled>
+										Disabled
+									</label>
+								</div>
+								<div class="radio icheck icheck-purple mr">
+									<label>
+										<input type="radio" name="optRadios29" id="optRadios49" value="optrd49" checked disabled>
+										Disabled checked
+									</label>
+								</div>								
+							</div>
+						</div>
+						
+						<hr />
+						
+						<div class="row">
+							<div class="col-md-6 col-lg-6">
+								<label>File input</label>
+								<input type="file" name="fileInput" class="niceFileInput" data-btn-class="btn-primary"  />
+								
+								<hr />
+								<label>Tags</label>
+								<input type="text" id="input-tags-id" class="form-control selectize-tags" value="best,good">
+								
+								<hr />
+								<label>Single select</label>
+								<select id="select-person" class="form-control selectize-single" placeholder="Select a person...">
+									<option value="">Select a person...</option>
+									<option value="4">Johny Cage</option>
+									<option value="1">Jean Travolta</option>
+									<option value="3">Nikola Tesla</option>
+								</select>
+								
+								<hr />
+								<label>Multiple select</label>
+								<select name="country[]" multiple class="form-control selectize-multiple" placeholder="Select country...">
+									<option value="">Select country...</option>
+									<option value="AF">Afghanistan</option>
+									<option value="AL">Albania</option>
+									<option value="DZ">Algeria</option>
+									<option value="AS">American Samoa</option>
+									<option value="AD">Andorra</option>
+									<option value="AO">Angola</option>
+									<option value="AI">Anguilla</option>
+									<option value="AQ">Antarctica</option>
+									<option value="AG">Antigua and Barbuda</option>
+									<option value="AR">Argentina</option>
+									<option value="AM">Armenia</option>
+									<option value="AW">Aruba</option>
+									<option value="AU">Australia</option>
+									<option value="AT">Austria</option>
+									<option value="AZ">Azerbaijan</option>
+									<option value="BS">Bahamas</option>
+									<option value="BH">Bahrain</option>
+									<option value="BD">Bangladesh</option>
+									<option value="BB">Barbados</option>
+									<option value="BY">Belarus</option>
+									<option value="BE">Belgium</option>
+									<option value="BZ">Belize</option>
+									<option value="BJ">Benin</option>
+									<option value="BM">Bermuda</option>
+									<option value="BT">Bhutan</option>
+									<option value="BO">Bolivia, Plurinational State of</option>
+									<option value="BA">Bosnia and Herzegovina</option>
+									<option value="BW">Botswana</option>
+									<option value="BV">Bouvet Island</option>
+									<option value="BR">Brazil</option>
+									<option value="IO">British Indian Ocean Territory</option>
+									<option value="BN">Brunei Darussalam</option>
+									<option value="BG">Bulgaria</option>
+									<option value="BF">Burkina Faso</option>
+									<option value="BI">Burundi</option>
+									<option value="KH">Cambodia</option>
+									<option value="CM">Cameroon</option>
+									<option value="CA">Canada</option>
+									<option value="CV">Cape Verde</option>
+									<option value="KY">Cayman Islands</option>
+									<option value="CF">Central African Republic</option>
+									<option value="TD">Chad</option>
+									<option value="CL">Chile</option>
+									<option value="CN">China</option>
+									<option value="CX">Christmas Island</option>
+									<option value="CC">Cocos (Keeling) Islands</option>
+									<option value="CO">Colombia</option>
+									<option value="KM">Comoros</option>
+									<option value="CG">Congo</option>
+									<option value="CD">Congo, the Democratic Republic of the</option>
+									<option value="CK">Cook Islands</option>
+									<option value="CR">Costa Rica</option>
+									<option value="CI">C&ocirc;te d'Ivoire</option>
+									<option value="HR">Croatia</option>
+									<option value="CU">Cuba</option>
+									<option value="CY">Cyprus</option>
+									<option value="CZ">Czech Republic</option>
+									<option value="DK">Denmark</option>
+									<option value="DJ">Djibouti</option>
+									<option value="DM">Dominica</option>
+									<option value="DO">Dominican Republic</option>
+									<option value="EC">Ecuador</option>
+									<option value="EG">Egypt</option>
+									<option value="SV">El Salvador</option>
+									<option value="GQ">Equatorial Guinea</option>
+									<option value="ER">Eritrea</option>
+									<option value="EE">Estonia</option>
+									<option value="ET">Ethiopia</option>
+									<option value="FK">Falkland Islands (Malvinas)</option>
+									<option value="FO">Faroe Islands</option>
+									<option value="FJ">Fiji</option>
+									<option value="FI">Finland</option>
+									<option value="FR">France</option>
+									<option value="GF">French Guiana</option>
+									<option value="PF">French Polynesia</option>
+									<option value="TF">French Southern Territories</option>
+									<option value="GA">Gabon</option>
+									<option value="GM">Gambia</option>
+									<option value="GE">Georgia</option>
+									<option value="DE">Germany</option>
+									<option value="GH">Ghana</option>
+									<option value="GI">Gibraltar</option>
+									<option value="GR">Greece</option>
+									<option value="GL">Greenland</option>
+									<option value="GD">Grenada</option>
+									<option value="GP">Guadeloupe</option>
+									<option value="GU">Guam</option>
+									<option value="GT">Guatemala</option>
+									<option value="GG">Guernsey</option>
+									<option value="GN">Guinea</option>
+									<option value="GW">Guinea-Bissau</option>
+									<option value="GY">Guyana</option>
+									<option value="HT">Haiti</option>
+									<option value="HM">Heard Island and McDonald Islands</option>
+									<option value="VA">Holy See (Vatican City State)</option>
+									<option value="HN">Honduras</option>
+									<option value="HK">Hong Kong</option>
+									<option value="HU">Hungary</option>
+									<option value="IS">Iceland</option>
+									<option value="IN">India</option>
+									<option value="ID">Indonesia</option>
+									<option value="IR">Iran, Islamic Republic of</option>
+									<option value="IQ">Iraq</option>
+									<option value="IE">Ireland</option>
+									<option value="IM">Isle of Man</option>
+									<option value="IL">Israel</option>
+									<option value="IT">Italy</option>
+									<option value="JM">Jamaica</option>
+									<option value="JP">Japan</option>
+									<option value="JE">Jersey</option>
+									<option value="JO">Jordan</option>
+									<option value="KZ">Kazakhstan</option>
+									<option value="KE">Kenya</option>
+									<option value="KI">Kiribati</option>
+									<option value="KP">Korea, Democratic People's Republic of</option>
+									<option value="KR">Korea, Republic of</option>
+									<option value="KW">Kuwait</option>
+									<option value="KG">Kyrgyzstan</option>
+									<option value="LA">Lao People's Democratic Republic</option>
+									<option value="LV">Latvia</option>
+									<option value="LB">Lebanon</option>
+									<option value="LS">Lesotho</option>
+									<option value="LR">Liberia</option>
+									<option value="LY">Libyan Arab Jamahiriya</option>
+									<option value="LI">Liechtenstein</option>
+									<option value="LT">Lithuania</option>
+									<option value="LU">Luxembourg</option>
+									<option value="MO">Macao</option>
+									<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+									<option value="MG">Madagascar</option>
+									<option value="MW">Malawi</option>
+									<option value="MY">Malaysia</option>
+									<option value="MV">Maldives</option>
+									<option value="ML">Mali</option>
+									<option value="MT">Malta</option>
+									<option value="MH">Marshall Islands</option>
+									<option value="MQ">Martinique</option>
+									<option value="MR">Mauritania</option>
+									<option value="MU">Mauritius</option>
+									<option value="YT">Mayotte</option>
+									<option value="MX">Mexico</option>
+									<option value="FM">Micronesia, Federated States of</option>
+									<option value="MD">Moldova, Republic of</option>
+									<option value="MC">Monaco</option>
+									<option value="MN">Mongolia</option>
+									<option value="ME">Montenegro</option>
+									<option value="MS">Montserrat</option>
+									<option value="MA">Morocco</option>
+									<option value="MZ">Mozambique</option>
+									<option value="MM">Myanmar</option>
+									<option value="NA">Namibia</option>
+									<option value="NR">Nauru</option>
+									<option value="NP">Nepal</option>
+									<option value="NL">Netherlands</option>
+									<option value="AN">Netherlands Antilles</option>
+									<option value="NC">New Caledonia</option>
+									<option value="NZ">New Zealand</option>
+									<option value="NI">Nicaragua</option>
+									<option value="NE">Niger</option>
+									<option value="NG">Nigeria</option>
+									<option value="NU">Niue</option>
+									<option value="NF">Norfolk Island</option>
+									<option value="MP">Northern Mariana Islands</option>
+									<option value="NO">Norway</option>
+									<option value="OM">Oman</option>
+									<option value="PK">Pakistan</option>
+									<option value="PW">Palau</option>
+									<option value="PS">Palestinian Territory, Occupied</option>
+									<option value="PA">Panama</option>
+									<option value="PG">Papua New Guinea</option>
+									<option value="PY">Paraguay</option>
+									<option value="PE">Peru</option>
+									<option value="PH">Philippines</option>
+									<option value="PN">Pitcairn</option>
+									<option value="PL">Poland</option>
+									<option value="PT">Portugal</option>
+									<option value="PR">Puerto Rico</option>
+									<option value="QA">Qatar</option>
+									<option value="RE">R&eacute;union</option>
+									<option value="RO">Romania</option>
+									<option value="RU">Russian Federation</option>
+									<option value="RW">Rwanda</option>
+									<option value="BL">Saint Barth&eacute;lemy</option>
+									<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+									<option value="KN">Saint Kitts and Nevis</option>
+									<option value="LC">Saint Lucia</option>
+									<option value="MF">Saint Martin (French part)</option>
+									<option value="PM">Saint Pierre and Miquelon</option>
+									<option value="VC">Saint Vincent and the Grenadines</option>
+									<option value="WS">Samoa</option>
+									<option value="SM">San Marino</option>
+									<option value="ST">Sao Tome and Principe</option>
+									<option value="SA">Saudi Arabia</option>
+									<option value="SN">Senegal</option>
+									<option value="RS">Serbia</option>
+									<option value="SC">Seychelles</option>
+									<option value="SL">Sierra Leone</option>
+									<option value="SG">Singapore</option>
+									<option value="SK">Slovakia</option>
+									<option value="SI">Slovenia</option>
+									<option value="SB">Solomon Islands</option>
+									<option value="SO">Somalia</option>
+									<option value="ZA">South Africa</option>
+									<option value="GS">South Georgia and the South Sandwich Islands</option>
+									<option value="ES">Spain</option>
+									<option value="LK">Sri Lanka</option>
+									<option value="SD">Sudan</option>
+									<option value="SR">Suriname</option>
+									<option value="SJ">Svalbard and Jan Mayen</option>
+									<option value="SZ">Swaziland</option>
+									<option value="SE">Sweden</option>
+									<option value="CH">Switzerland</option>
+									<option value="SY">Syrian Arab Republic</option>
+									<option value="TW">Taiwan, Province of China</option>
+									<option value="TJ">Tajikistan</option>
+									<option value="TZ">Tanzania, United Republic of</option>
+									<option value="TH">Thailand</option>
+									<option value="TL">Timor-Leste</option>
+									<option value="TG">Togo</option>
+									<option value="TK">Tokelau</option>
+									<option value="TO">Tonga</option>
+									<option value="TT">Trinidad and Tobago</option>
+									<option value="TN">Tunisia</option>
+									<option value="TR">Turkey</option>
+									<option value="TM">Turkmenistan</option>
+									<option value="TC">Turks and Caicos Islands</option>
+									<option value="TV">Tuvalu</option>
+									<option value="UG">Uganda</option>
+									<option value="UA">Ukraine</option>
+									<option value="AE">United Arab Emirates</option>
+									<option value="GB">United Kingdom</option>
+									<option value="US">United States</option>
+									<option value="UM">United States Minor Outlying Islands</option>
+									<option value="UY">Uruguay</option>
+									<option value="UZ">Uzbekistan</option>
+									<option value="VU">Vanuatu</option>
+									<option value="VE">Venezuela, Bolivarian Republic of</option>
+									<option value="VN">Viet Nam</option>
+									<option value="VG">Virgin Islands, British</option>
+									<option value="VI">Virgin Islands, U.S.</option>
+									<option value="WF">Wallis and Futuna</option>
+									<option value="EH">Western Sahara</option>
+									<option value="YE">Yemen</option>
+									<option value="ZM">Zambia</option>
+									<option value="ZW">Zimbabwe</option>
+								</select>
+								
+								<hr />
+								<label>Email contact</label>
+								<select id="select-to" name="user-email" class="form-control selectize-contact" placeholder="Pick some people..."></select>
+								
+								<div class="clearfix"></div>
+								<hr />		
+								<label>Date picker</label>
+								<input type="text" class="form-control datepicker" id="datePicker">
+								
+							</div>
+							<div class="col-md-6 col-lg-6">
+								<label>Simple color picker</label>
+								<div class="clearfix"></div>
+								<input type="text" class="form-control colorpicker" id="colorPicker1">
+								
+								<hr />
+								<label>Full color picker</label>
+								<div class="clearfix"></div>
+								<input type="text" class="form-control colorpicker-full" id="colorPicker2">
+								
+								<hr />
+								<label>Flat color picker</label>
+								<div class="clearfix"></div>
+								<input type="text" class="form-control colorpicker-flat" id="colorPicker3">
+								
+								<hr style="margin-top:35px;" />
+								<div class="row">
+									<div class="col-md-6 col-lg-6">
+										<label>Basic spinner</label>
+										<input type="number" class="form-control">
+									</div>
+									<div class="col-md-6 col-lg-6">
+										<label>Custom spinner</label>
+										<input type="number" class="form-control" min="2" max="20" step="2">
+									</div>
+								</div>								
+							</div>
+						</div>
+						
+						<hr />
+						
+						<div class="row">
+							<div class="col-md-12 col-lg-12">
+								
+								<label>Text editor</label>
+								<textarea id="yellow-textarea" name="yellow-textarea" class="form-control yellow-editor" rows="4"></textarea>
+								
+								<div class="clearfix"></div>
+								<hr />
+								
+								<h4>Slider</h4>
+								<div class="row">
+									<div class="col-md-2 col-lg-2">
+										<h5>Vertical</h5>
+										<div class="noUiSlider ve" style="height:100px;"></div>
+									</div>
+									<div class="col-md-3 col-lg-3">
+										<h5>Horizontal</h5>
+										<div class="noUiSlider hr" style="width:100%;"></div>
+									</div>
+									<div class="col-md-7 col-lg-7">
+										<h5>Bind to field</h5>
+										<form class="form-inline" role="form">
+											<div class="noUiSlider btf" style="width:95%;"></div>
+											<div class="clearfix" style="margin-bottom:15px;"></div>
+											<div class="form-group">
+												<input type="text" class="form-control" id="exTO">
+											</div>
+											<div class="form-group">
+												<input type="text" class="form-control" id="exFR">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="clearfix"></div>
+				<hr />
+				
+				<div class="panel panel-blank">
+					<div class="panel-heading">
+						<h3 class="panel-title">Input groups</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-6 col-lg-6">
+								<div class="input-group mr">
+									<span class="input-group-addon">@</span>
+									<input type="text" class="form-control" placeholder="Username">
+								</div>
+
+								<div class="input-group mr">
+									<input type="text" class="form-control">
+									<span class="input-group-addon">.00</span>
+								</div>
+
+								<div class="input-group mr">
+									<span class="input-group-addon">$</span>
+									<input type="text" class="form-control">
+									<span class="input-group-addon">.00</span>
+								</div>
+								
+								<div class="input-group mr">
+									<span class="input-group-addon">
+										<input type="checkbox">
+									</span>
+									<input type="text" class="form-control">
+								</div>
+								
+								<div class="input-group mr">
+									<span class="input-group-addon">
+										<input type="radio">
+									</span>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6">
+								<div class="input-group mr">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="button">Go!</button>
+									</span>
+									<input type="text" class="form-control">
+								</div>
+								
+								<div class="input-group mr">
+									<input type="text" class="form-control">
+										<span class="input-group-btn">
+									<button class="btn btn-warning-alt" type="button">Go!</button>
+									</span>
+								</div>
+								
+								<div class="input-group mr">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+										<ul class="dropdown-menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+									<input type="text" class="form-control">
+								</div>
+								
+								<div class="input-group mr">
+									<input type="text" class="form-control">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+										<ul class="dropdown-menu pull-right">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+								</div>
+								
+								<div class="input-group mr">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-info" tabindex="-1">Action</button>
+										<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+									<input type="text" class="form-control">
+								</div>
+								
+								<div class="input-group">
+									<input type="text" class="form-control">
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-inverse" tabindex="-1">Action</button>
+										<button type="button" class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu pull-right" role="menu">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Separated link</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>						
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<hr />
+		</section>
+		<!-- ./ main content -->
+
+		<script src="assets/bootstrap/js/jquery.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/jquery.nice-file-input.js"></script>
+		<script src="assets/js/selectize.min.js"></script>
+		<script src="assets/js/jquery.icheck.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/pikaday.js"></script>
+		<script src="assets/js/pikaday.jquery.js"></script>
+		<script src="assets/js/spectrum.js"></script>
+		<script src="assets/js/jquery.fs.stepper.min.js"></script>
+		<script src="assets/js/jquery.texteditor.js"></script>
+		<script src="assets/js/jquery.nouislider.min.js"></script>
+		<script src="assets/js/Chart.js"></script>
+		<script src="assets/js/leaflet/leaflet.js"></script>
+		<script src="assets/js/loader.js"></script>
+		<script src="assets/js/samples.js"></script>
+	</body>
+</html>

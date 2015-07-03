@@ -1,0 +1,56 @@
+.tooltip {
+  font-size: 14px;
+}
+.tooltip-inner {
+	border-radius: 0;
+}
+
+.popover {
+	background-color: rgba(0,0,0,0.96);
+	border-color: rgba(0,0,0,0.8);
+	border-radius: 0;
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	background-clip: padding-box;
+}
+.popover-title {
+	font-size:18px;
+	background-color: rgba(255,255,255,0.099);
+	border-bottom: 0;
+	border-radius: 0;
+}
+.popover.top .arrow {
+	border-top-color: rgba(0,0,0,0.96);
+}
+.popover.top .arrow:after {
+	border-top-color: rgba(0,0,0,0.96);
+}
+
+.popover.right .arrow {
+	border-right-color: rgba(0,0,0,0.96);
+}
+.popover.right .arrow:after {
+	border-right-color: rgba(0,0,0,0.96);
+}
+
+.popover.bottom .arrow {
+	border-bottom-color: rgba(0,0,0,0.96);
+}
+.popover.bottom .arrow:after {
+	border-bottom-color: rgba(0,0,0,0.96);
+}
+
+.popover.left .arrow {
+	border-left-color: rgba(0,0,0,0.96);
+}
+.popover.left .arrow:after {
+	border-left-color: rgba(0,0,0,0.96);
+}
+
+.popover-sample {
+	position: relative;
+	display: block;
+	float: left;
+	width: 260px;
+	margin: 20px;
+}
