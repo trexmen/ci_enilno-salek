@@ -1,25 +1,81 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
-	public function index()
+class Welcome extends CI_Controller{
+	function __construct()
 	{
-		$this->load->view('welcome_message');
+		parent::__construct();
+		$this->load->library(array('authentication'));
+		$this->load->helper('url');
+		$this->load->database();
+	}
+	
+	function index()
+	{
+		$this->login();
+	}
+	
+	function login()
+	{
+		if ($this->session->userdata('status')==null){
+			$this->load->library('form_validation');
+			$this->load->helper('form');
+			$this->form_validation->set_rules('username', 'Username','trim|required|strip_tags');
+			$this->form_validation->set_rules('password', 'Password','trim|required');			
+				
+			if ($this->form_validation->run() == FALSE)
+			{
+				$this->load->view('welcome');
+			}
+			else
+			{
+				if ($this->check_login())
+				{
+					$this->redirect_page();
+				}else{
+					$data['message'] = "Username atau password belum benar.";
+					$this->load->view('welcome',$data);
+				}
+			}
+		}
+		else $this->redirect_page();
+	}
+	
+	
+	function redirect_page()
+	{
+		$status = $this->session->userdata('status');
+		if($status=='admin'){
+			redirect('home');
+		}else{
+			redirect('home/history');
+		}
+	}
+	
+	function check_login()
+	{
+		$username   = $this->input->post('username',TRUE);
+		$password   = $this->input->post('password',TRUE);
+		$login = $this->authentication->login($username, $password);
+		if($login)
+		{
+			return TRUE;
+		}
+		else
+		{
+			$this->form_validation->set_message('check_login','Username atau password anda salah.');
+			return FALSE;
+		}
+	}
+	 
+	function logout(){
+		$this->authentication->logout();
+		redirect('/');
+	}
+	
+	function access_denied(){
+		$this->load->view('access_denied');
 	}
 }
+
+/* End of file auth.php */
+/* Location: ./application/controllers/Welcome.php */
