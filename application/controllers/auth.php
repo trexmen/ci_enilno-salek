@@ -45,7 +45,7 @@ class Auth extends CI_Controller{
 	{
 		$status = $this->session->userdata('status');
 		if($status=='Y'){
-			redirect('health_certificate');
+			redirect('home');
 		}else{
 			redirect('health_certificate/history');
 		}
