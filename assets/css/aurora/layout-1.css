@@ -1,6 +1,7 @@
 /** layout **/
 body {
-	background-image:url('../../images/aurora-desktop.jpg');
+	/*background-image:url('../../images/aurora-desktop.jpg');*/
+	background-color: rgb(99, 73, 218);
 	background-position:left top;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -65,7 +66,7 @@ body {
 	background-color:rgba(0,0,0,0.5);
 }
 .sidebar-heading {
-	background: rgba(231,76,60,0.5);
+	/*background: rgba(231,76,60,0.5);*/
 	padding:0 15px;
 	color:#fdfdfd;
 	position:relative;
