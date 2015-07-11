@@ -16,7 +16,7 @@ class Auth extends CI_Controller{
 	
 	function login()
 	{
-		if ($this->session->userdata('status')==null){
+		if ($this->session->userdata('level')==null){
 			$this->load->library('form_validation');
 			$this->load->helper('form');
 			$this->form_validation->set_rules('username', 'Username','trim|required|strip_tags');
@@ -43,9 +43,9 @@ class Auth extends CI_Controller{
 	
 	function redirect_page()
 	{		
-		$status = $this->session->userdata('status');
-		log_message('info', $status);
-		if($status=='Y'){
+		$level = $this->session->userdata('level');
+		log_message('info', $level);
+		if($level=='guru'){
 			redirect('home');
 		}else{
 			redirect('home/history');
@@ -69,7 +69,7 @@ class Auth extends CI_Controller{
 	}
 	 
 	function logout(){
-		$this->authentication->logout();
+		$this->authentication->logout();		
 		redirect('/');
 	}
 	

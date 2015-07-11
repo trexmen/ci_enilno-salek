@@ -27,7 +27,7 @@
 		}
 		
 		function index(){
-			if ($this->session->userdata('status')=='Y'){
+			if ($this->session->userdata('level')=='guru'){
 				$this->load->view('home');
 			}
 			else redirect(base_url("auth/login"));

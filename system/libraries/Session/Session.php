@@ -714,20 +714,47 @@ class CI_Session {
 	 * @param	mixed	$data	Session data key(s)
 	 * @return	void
 	 */
-	public function unset_userdata($key)
-	{
-		if (is_array($key))
-		{
-			foreach ($key as $k)
-			{
-				unset($_SESSION[$k]);
-			}
+	// public function unset_userdata($key)
+	// {
+	// 	if (is_array($key))
+	// 	{
+	// 		foreach ($key as $k)
+	// 		{
+	// 			unset($_SESSION[$k]);
+	// 		}
 
-			return;
+	// 		return;
+	// 	}
+
+	// 	unset($_SESSION[$key]);
+	// }
+
+	/**
+	 * Delete a session variable from the "userdata" array
+	 *
+	 * @access	array
+	 * @return	void
+	 */
+	function unset_userdata($newdata = array())
+	{
+		if (is_string($newdata))
+		{
+			$newdata = array($newdata => '');
 		}
 
-		unset($_SESSION[$key]);
+		if (count($newdata) > 0)
+		{
+			foreach ($newdata as $key => $val)
+			{
+				unset($this->userdata[$key]);
+			}
+		}
+
+		//$this->sess_write();
 	}
+
+
+
 
 	// ------------------------------------------------------------------------
 

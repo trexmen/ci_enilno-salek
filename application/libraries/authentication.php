@@ -17,14 +17,13 @@ class authentication{
 		if($result){//iffoundcont
 			$password = md5($password);
 			if($password===$result->password){//checkpassword
-				$this->CI->session->set_userdata(array('username'=>$username,'status'=>$result->status));				
+				$this->CI->session->set_userdata(array('username'=>$username,'level'=>$result->level));				
 				return true;
 			}
 		}
 		return false;
 	}
-	function logout(){		
-		$this->CI->session->unset_userdata(array('username'=>'','status'=>''));
-		//log_message('info',$this->session->userdata('status'));
+	function logout(){
+		$this->CI->session->unset_userdata(array('username'=>'','level'=>''));
 	}
 }
