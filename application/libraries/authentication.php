@@ -23,7 +23,8 @@ class authentication{
 		}
 		return false;
 	}
-	function logout(){
+	function logout(){		
 		$this->CI->session->unset_userdata(array('username'=>'','status'=>''));
+		//log_message('info',$this->session->userdata('status'));
 	}
 }

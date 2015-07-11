@@ -3,9 +3,9 @@
 	<head>
 		<title>Kelas Online - SMKN 2 Subang</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="assets/css/styles.css" rel="stylesheet" media="screen">
-		<link href="assets/css/aurora/layout-1.css" rel="stylesheet" media="screen">
+		<link href="<?php echo base_url();?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="<?php echo base_url();?>assets/css/styles.css" rel="stylesheet" media="screen">
+		<link href="<?php echo base_url();?>assets/css/aurora/layout-1.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
 		
@@ -171,7 +171,7 @@
 								<div class="media-group media-group-alt">
 									<div class="media first">
 										<a class="media-object-wrapper" href="#">
-											<img class="media-object" src="images/jeun-th-02.jpg">
+											<img class="media-object" src="<?php echo base_url();?>images/jeun-th-02.jpg">
 										</a>
 										<div class="media-body">
 											<a href="#"><h4 class="media-heading">Cras sit amet nibh libero</h4></a>
@@ -182,7 +182,7 @@
 									
 									<div class="media">
 										<a class="media-object-wrapper" href="#">
-											<img class="media-object" src="images/jeun-elang-01.jpg">
+											<img class="media-object" src="<?php echo base_url();?>images/jeun-elang-01.jpg">
 										</a>
 										<div class="media-body">
 											<a href="#"><h4 class="media-heading">Nullam id dolor id</h4></a>
@@ -194,7 +194,7 @@
 									
 									<div class="media">
 										<a class="media-object-wrapper" href="#">
-											<img class="media-object" src="images/elang-th-02.jpg">
+											<img class="media-object" src="<?php echo base_url();?>images/elang-th-02.jpg">
 										</a>
 										<div class="media-body">
 											<a href="#"><h4 class="media-heading">Duis mollis, est non luctus</h4></a>
@@ -205,7 +205,7 @@
 									
 									<div class="media">
 										<a class="media-object-wrapper" href="#">
-											<img class="media-object" src="images/jeun-elang-03.jpg">
+											<img class="media-object" src="<?php echo base_url();?>images/jeun-elang-03.jpg">
 										</a>
 										<div class="media-body">
 											<a href="#"><h4 class="media-heading">Cras sit amet nibh libero</h4></a>
@@ -302,7 +302,7 @@
 								<div class="thumbnail thumbnail-inverse thumbnail-custom-2" style="margin:0;">
 									<div class="caption">
 										<a class="avatar-wrap" href="#">
-											<img src="images/elang-th-02.jpg" alt="Angga Setiyadi, S.Kom." class="img-circle img-avatar">
+											<img src="<?php echo base_url();?>images/elang-th-02.jpg" alt="Angga Setiyadi, S.Kom." class="img-circle img-avatar">
 										</a>
 										<h3 class="heading-alt2">UNAIR Surabaya</h3>
 										<span class="author">Sept, 03 2013</span>
@@ -330,22 +330,22 @@
 		</section>
 		<!-- ./ main content -->
 
-		<script src="assets/bootstrap/js/jquery.js"></script>
-		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-		<script src="assets/js/masonry.pkgd.min.js"></script>
-		<script src="assets/js/jquery.nice-file-input.js"></script>
-		<script src="assets/js/selectize.min.js"></script>
-		<script src="assets/js/jquery.icheck.min.js"></script>
-		<script src="assets/js/moment.min.js"></script>
-		<script src="assets/js/pikaday.js"></script>
-		<script src="assets/js/pikaday.jquery.js"></script>
-		<script src="assets/js/spectrum.js"></script>
-		<script src="assets/js/jquery.fs.stepper.min.js"></script>
-		<script src="assets/js/jquery.texteditor.js"></script>
-		<script src="assets/js/jquery.nouislider.min.js"></script>
-		<script src="assets/js/Chart.js"></script>
-		<script src="assets/js/leaflet/leaflet.js"></script>
-		<script src="assets/js/loader.js"></script>
-		<script src="assets/js/samples.js"></script>
+		<script src="<?php echo base_url();?>assets/bootstrap/js/jquery.js"></script>
+		<script src="<?php echo base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/masonry.pkgd.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.nice-file-input.js"></script>
+		<script src="<?php echo base_url();?>assets/js/selectize.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.icheck.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/moment.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/pikaday.js"></script>
+		<script src="<?php echo base_url();?>assets/js/pikaday.jquery.js"></script>
+		<script src="<?php echo base_url();?>assets/js/spectrum.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.fs.stepper.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.texteditor.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.nouislider.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/Chart.js"></script>
+		<script src="<?php echo base_url();?>assets/js/leaflet/leaflet.js"></script>
+		<script src="<?php echo base_url();?>assets/js/loader.js"></script>
+		<script src="<?php echo base_url();?>assets/js/samples.js"></script>
 	</body>
 </html>

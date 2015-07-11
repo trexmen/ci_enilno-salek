@@ -3,9 +3,9 @@
 	<head>
 		<title>Kelas Online - SMKN 2 Subang</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="assets/css/styles.css" rel="stylesheet" media="screen">
-		<link href="assets/css/aurora/layout-1.css" rel="stylesheet" media="screen">
+		<link href="<?php echo base_url();?>assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="<?php echo base_url();?>assets/css/styles.css" rel="stylesheet" media="screen">
+		<link href="<?php echo base_url();?>assets/css/aurora/layout-1.css" rel="stylesheet" media="screen">
 	</head>
 	<body>
 		
@@ -100,7 +100,7 @@
 				<div class="hex-wrapper">
 					<div class="hexagon hexagon-sm">
 						<div class="hexagon-wrap">
-							<a href="#" class="hexagon-inner" style="background-image: url(images/elang-th-02.jpg);"></a>
+							<a href="#" class="hexagon-inner" style="background-image: url(<?php echo base_url();?>images/elang-th-02.jpg);"></a>
 						</div>
 					</div>
 					<h3 class="sidebar-title">Tarkiman, S.Kom.</h3>
@@ -122,7 +122,7 @@
 				<a href="#" class="list-group-item">
 					<i class="glyphicon glyphicon-user rm"></i><span>Ubah Data & Password</span>
 				</a>
-				<a href="#" class="list-group-item">
+				<a href="<?php echo base_url("auth/logout");?>" class="list-group-item">
 					<i class="glyphicon glyphicon-off rm"></i><span>Log Out</span>
 				</a>
 			</div>
@@ -135,19 +135,19 @@
 				</div>
 				<a class="list-group-item custom-1" href="#">
 					<i class="pull-right glyphicon glyphicon-record online busy"></i>
-					<img src="images/jeun-th-01.jpg" alt="Geunevere" class="img-circle img-avatar pull-left mr">
+					<img src="<?php echo base_url();?>images/jeun-th-01.jpg" alt="Geunevere" class="img-circle img-avatar pull-left mr">
 					<h4 class="user-id">Geunevere</h4>
 					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
 				</a>
 				<a class="list-group-item custom-1" href="#">
 					<i class="pull-right glyphicon glyphicon-record online available"></i>
-					<img src="images/elang-th-01.jpg" alt="Elang" class="img-circle img-avatar pull-left mr">
+					<img src="<?php echo base_url();?>images/elang-th-01.jpg" alt="Elang" class="img-circle img-avatar pull-left mr">
 					<h4 class="user-id">Elang</h4>
 					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
 				</a>
 				<a class="list-group-item custom-1" href="#">
 					<i class="pull-right glyphicon glyphicon-record online away"></i>
-					<img src="images/jeun-elang-th-01.jpg" alt="Seraphiel" class="img-circle img-avatar pull-left mr">
+					<img src="<?php echo base_url();?>images/jeun-elang-th-01.jpg" alt="Seraphiel" class="img-circle img-avatar pull-left mr">
 					<h4 class="user-id">Seraphiel</h4>
 					<small class="online-status">Lorem ipsum dolor sit amet adipiscing</small>
 				</a>
@@ -183,13 +183,13 @@
 									<div class="group-top">
 										<div class="hexagon hexagon-sm">
 											<div class="hexagon-wrap">
-												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="left" title="Elang Aro" style="background-image: url(images/elang-th-01.jpg);">
+												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="left" title="Elang Aro" style="background-image: url(<?php echo base_url();?>images/elang-th-01.jpg);">
 												</a>
 											 </div>
 										 </div>
 										<div class="hexagon hexagon-sm">
 											<div class="hexagon-wrap">
-												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="right" title="Seraphiel" style="background-image: url(images/elang-th-02.jpg);">
+												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="right" title="Seraphiel" style="background-image: url(<?php echo base_url();?>images/elang-th-02.jpg);">
 												</a>
 											 </div>
 										 </div>
@@ -197,7 +197,7 @@
 									<div class="group-middle">
 										<div class="hexagon hexagon-sm">
 											<div class="hexagon-wrap">
-												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="left" title="Dheeva Agung" style="background-image: url(images/jeun-th-01.jpg);">
+												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="left" title="Dheeva Agung" style="background-image: url(<?php echo base_url();?>images/jeun-th-01.jpg);">
 												</a>
 											 </div>
 										 </div>
@@ -210,7 +210,7 @@
 										 </div>
 										<div class="hexagon hexagon-sm">
 											<div class="hexagon-wrap">
-												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="right" title="Calista Aurelia" style="background-image: url(images/jeun-elang-th-01.jpg);">
+												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="right" title="Calista Aurelia" style="background-image: url(<?php echo base_url();?>images/jeun-elang-th-01.jpg);">
 												</a>
 											 </div>
 										 </div>
@@ -218,13 +218,13 @@
 									<div class="group-bottom">
 										<div class="hexagon hexagon-sm">
 											<div class="hexagon-wrap">
-												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="left" title="Peter Elang" style="background-image: url(images/elang-th-03.jpg);">
+												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="left" title="Peter Elang" style="background-image: url(<?php echo base_url();?>images/elang-th-03.jpg);">
 												</a>
 											 </div>
 										 </div>
 										<div class="hexagon hexagon-sm">
 											<div class="hexagon-wrap">
-												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="right" title="Princess Jeun" style="background-image: url(images/jeun-th-02.jpg);">
+												<a href="#" class="hexagon-inner toolTip" data-toggle="tooltip" data-placement="right" title="Princess Jeun" style="background-image: url(<?php echo base_url();?>images/jeun-th-02.jpg);">
 												</a>
 											 </div>
 										 </div>
@@ -258,7 +258,7 @@
 							<div class="col-md-6 col-lg-6">
 								<div class="media media-primary">
 									<a href="#" class="pull-left">
-										<img class="media-object img-circle img-avatar" src="images/elang-th-01.jpg">
+										<img class="media-object img-circle img-avatar" src="<?php echo base_url();?>images/elang-th-01.jpg">
 									</a>
 									<div class="media-body">
 										<a href="#"><h4 class="media-heading">Cras sit amet nibh libero</h4></a>
@@ -270,7 +270,7 @@
 							<div class="col-md-6 col-lg-6">
 								<div class="media media-danger">
 									<a href="#" class="pull-left">
-										<img class="media-object img-circle img-avatar" src="images/elang-th-02.jpg">
+										<img class="media-object img-circle img-avatar" src="<?php echo base_url();?>images/elang-th-02.jpg">
 									</a>
 									<div class="media-body">
 										<a href="#"><h4 class="media-heading">Nullam id dolor id</h4></a>
@@ -282,7 +282,7 @@
 							<div class="col-md-6 col-lg-6">
 								<div class="media media-info">
 									<a href="#" class="pull-left">
-										<img class="media-object img-circle img-avatar" src="images/elang-th-03.jpg">
+										<img class="media-object img-circle img-avatar" src="<?php echo base_url();?>images/elang-th-03.jpg">
 									</a>
 									<div class="media-body">
 										<a href="#"><h4 class="media-heading">Duis mollis, est non luctus</h4></a>
@@ -294,7 +294,7 @@
 							<div class="col-md-6 col-lg-6">
 								<div class="media media-info">
 									<a href="#" class="pull-left">
-										<img class="media-object img-circle img-avatar" src="images/jeun-th-02.jpg">
+										<img class="media-object img-circle img-avatar" src="<?php echo base_url();?>images/jeun-th-02.jpg">
 									</a>
 									<div class="media-body">
 										<a href="#"><h4 class="media-heading">Cras sit amet nibh libero</h4></a>
@@ -325,7 +325,7 @@
 							<div class="col-md-6 col-lg-6">
 								<div class="media">
 									<a class="media-object-wrapper" href="#">
-										<img class="media-object" src="images/jeun-th-02.jpg">
+										<img class="media-object" src="<?php echo base_url();?>images/jeun-th-02.jpg">
 									</a>
 									<div class="media-body">
 										<a href="#"><h4 class="media-heading">Cras sit amet nibh libero</h4></a>
@@ -337,7 +337,7 @@
 							<div class="col-md-6 col-lg-6">
 								<div class="media media-danger">
 									<a class="media-object-wrapper" href="#">
-										<img class="media-object" src="images/jeun-elang-01.jpg">
+										<img class="media-object" src="<?php echo base_url();?>images/jeun-elang-01.jpg">
 									</a>
 									<div class="media-body">
 										<a href="#"><h4 class="media-heading">Nullam id dolor id</h4></a>
@@ -350,7 +350,7 @@
 							<div class="col-md-6 col-lg-6">
 								<div class="media">
 									<a class="media-object-wrapper" href="#">
-										<img class="media-object" src="images/elang-th-02.jpg">
+										<img class="media-object" src="<?php echo base_url();?>images/elang-th-02.jpg">
 									</a>
 									<div class="media-body">
 										<a href="#"><h4 class="media-heading">Duis mollis, est non luctus</h4></a>
@@ -362,7 +362,7 @@
 							<div class="col-md-6 col-lg-6">
 								<div class="media">
 									<a class="media-object-wrapper" href="#">
-										<img class="media-object" src="images/jeun-elang-03.jpg">
+										<img class="media-object" src="<?php echo base_url();?>images/jeun-elang-03.jpg">
 									</a>
 									<div class="media-body">
 										<a href="#"><h4 class="media-heading">Cras sit amet nibh libero</h4></a>
@@ -379,22 +379,22 @@
 		</section>
 		<!-- ./ main content -->
 
-		<script src="assets/bootstrap/js/jquery.js"></script>
-		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-		<script src="assets/js/masonry.pkgd.min.js"></script>
-		<script src="assets/js/jquery.nice-file-input.js"></script>
-		<script src="assets/js/selectize.min.js"></script>
-		<script src="assets/js/jquery.icheck.min.js"></script>
-		<script src="assets/js/moment.min.js"></script>
-		<script src="assets/js/pikaday.js"></script>
-		<script src="assets/js/pikaday.jquery.js"></script>
-		<script src="assets/js/spectrum.js"></script>
-		<script src="assets/js/jquery.fs.stepper.min.js"></script>
-		<script src="assets/js/jquery.texteditor.js"></script>
-		<script src="assets/js/jquery.nouislider.min.js"></script>
-		<script src="assets/js/Chart.js"></script>
-		<script src="assets/js/leaflet/leaflet.js"></script>
-		<script src="assets/js/loader.js"></script>
-		<script src="assets/js/samples.js"></script>
+		<script src="<?php echo base_url();?>assets/bootstrap/js/jquery.js"></script>
+		<script src="<?php echo base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/masonry.pkgd.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.nice-file-input.js"></script>
+		<script src="<?php echo base_url();?>assets/js/selectize.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.icheck.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/moment.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/pikaday.js"></script>
+		<script src="<?php echo base_url();?>assets/js/pikaday.jquery.js"></script>
+		<script src="<?php echo base_url();?>assets/js/spectrum.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.fs.stepper.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.texteditor.js"></script>
+		<script src="<?php echo base_url();?>assets/js/jquery.nouislider.min.js"></script>
+		<script src="<?php echo base_url();?>assets/js/Chart.js"></script>
+		<script src="<?php echo base_url();?>assets/js/leaflet/leaflet.js"></script>
+		<script src="<?php echo base_url();?>assets/js/loader.js"></script>
+		<script src="<?php echo base_url();?>assets/js/samples.js"></script>
 	</body>
 </html>
