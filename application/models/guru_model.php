@@ -15,9 +15,9 @@ class Guru_model extends CI_Model
 	{
 		$this->db->select('*');
 		$this->db->from($this->table_name);
-		$this->db->join('species','species.species_id='.$this->table_name.'.species_id');
-		$this->db->join('package','package.package_id='.$this->table_name.'.packaging_id');
-		$this->db->join('country','country.country_id='.$this->table_name.'.country_id');			
+		// $this->db->join('species','species.species_id='.$this->table_name.'.species_id');
+		// $this->db->join('package','package.package_id='.$this->table_name.'.packaging_id');
+		// $this->db->join('country','country.country_id='.$this->table_name.'.country_id');			
 		return $this->db->get();
 	}
 	
