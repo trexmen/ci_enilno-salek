@@ -48,7 +48,7 @@ class Auth extends CI_Controller{
 		if($level=='guru'){
 			redirect('home');
 		}else{
-			redirect('home/history');
+			redirect('home/dashboardSiswa');
 		}
 	}
 	

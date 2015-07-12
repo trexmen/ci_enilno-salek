@@ -21,75 +21,24 @@
 
 			<div class="collapse navbar-collapse navbar-ex1c">			
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="index.html">Dashboard</a></li>
+					<li class="active"><a href="<?php echo base_url('home');?>">Halaman Utama</a></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">CSS <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="typography.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Typography</span></a>
-							</li>
-							<li>
-								<a href="css-tables.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tables</span></a>
-							</li>
-							<li>
-								<a href="css-forms.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Forms</span></a>
-							</li>
-							<li>
-								<a href="css-buttons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Buttons & Dropdowns</span></a>
-							</li>
-							<li>
-								<a href="css-images.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Images</span></a>
-							</li>
-						</ul>
+						<a href="<?php echo base_url('listguru');?>" >List Guru</a>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="glyphicons.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Glyphicons</span></a>
-							</li>
-							<li>
-								<a href="navs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navs</span></a>
-							</li>
-							<li>
-								<a href="navbar.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Navbar</span></a>
-							</li>
-							<li>
-								<a href="breadcrumbs.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Breadcrumbs & Pagination</span></a>
-							</li>
-							<li>
-								<a href="label-alerts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Label, Badges, Alerts, Progress Bars</span></a>
-							</li>
-							<li>
-								<a href="containers.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Containers</span></a>
-							</li>
-						</ul>
+						<a href="<?php echo base_url('listsiswa');?>">List Siswa</a>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Plugins <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="modal.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Modal</span></a>
-							</li>
-							<li>
-								<a href="tooltip-popover.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Tooltip, popover</span></a>
-							</li>
-							<li>
-								<a href="collapse.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Collapse</span></a>
-							</li>
-							<li>
-								<a href="charts.html"><i class="glyphicon glyphicon-list-alt rm"></i><span>Charts & Map</span></a>
-							</li>
-						</ul>
+						<a href="<?php echo base_url('listmateri');?>">List Materi</a>
 					</li>
 				</ul>
 
-				<form class="navbar-form navbar-right" role="search">
+				<!-- <form class="navbar-form navbar-right" role="search">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
+						<input type="text" class="form-control" placeholder="Masukan keyword">
 					</div>
 					<button type="submit" class="btn btn-danger">Search</button>
-				</form>				
+				</form>	 -->			
 			</div>
 		</nav>
 		<!-- ./ top navbar -->

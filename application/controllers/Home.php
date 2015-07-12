@@ -5,7 +5,8 @@ class Home extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this->load->model(array(
-				'guru_model'
+				'guru_model',
+				'siswa_model'
 		));
 		$this->load->library(array(
 				'template',
@@ -18,9 +19,15 @@ class Home extends CI_Controller{
 	}
 
 	function index(){
-		if ($this->session->userdata('level')=='guru')
-		$this->dashboard();
-		else redirect(base_url("auth/login"));
+		if ($this->session->userdata('level')=='guru'){
+			$this->dashboard();
+		}
+		elseif ($this->session->userdata('level')=='siswa') {
+			$this->dashboardSiswa();
+		}		
+		else{
+			redirect(base_url("auth/login"));
+		}
 	}
 	
 	function dashboard(){
@@ -29,6 +36,19 @@ class Home extends CI_Controller{
 			$this->template->display('guru/dashboard',$this->data);
 		}
 		elseif ($this->session->userdata('level')=='siswa')
+		{
+		  	redirect(base_url("auth/access_denied"));
+		}else{
+		  	redirect(base_url("auth/login"));
+		}
+	}
+
+	function dashboardSiswa(){
+		if ($this->session->userdata('level')=='siswa'){			
+			$this->data['siswa']=$this->siswa_model->selectAll();
+			$this->template->displaySiswa('siswa/dashboard',$this->data);
+		}
+		elseif ($this->session->userdata('level')=='guru')
 		{
 		  	redirect(base_url("auth/access_denied"));
 		}else{
