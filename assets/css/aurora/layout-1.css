@@ -1,7 +1,7 @@
 /** layout **/
 body {
-	background-image:url('../../images/aurora-desktop.jpg');
-	/*background-color: rgb(90, 90, 90);*/
+	/* background-image:url('../../images/aurora-desktop.jpg'); */
+	/* background-color: rgb(90, 90, 90); */
 	background-position:left top;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -44,10 +44,11 @@ body {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	z-index:2000;
+	color: white;
 }
 .navbar-heading .navbar-nav > li > .dropdown-menu {}
 .navbar-heading  .navbar-brand {
-	color:rgba(255,255,255,0.8);
+	color: rgba(255, 255, 255, 0.8);
 	text-shadow:none;
 	font-weight:normal;
 	text-transform:uppercase;
@@ -63,12 +64,12 @@ body {
 	bottom:0;
 	width:286px;
 	z-index:2;
-	background-color:rgba(0,0,0,0.5);
+	/* background-color:rgba(0,0,0,0.5); */
 }
 .sidebar-heading {
-	/*background: rgba(231,76,60,0.5);*/
+	background: rgba(195, 195, 195, 0.5);
 	padding:0 15px;
-	color:#fdfdfd;
+	color: #000000;
 	position:relative;
 	overflow:hidden;
 }
@@ -96,7 +97,7 @@ body {
 }
 .page-heading {
 	height:121px;
-	background:rgba(0,0,0,0.2);
+	background: rgba(255, 255, 255, 0.2);
 	position:relative;
 	overflow:hidden;
 }
@@ -107,7 +108,7 @@ body {
 	width: 310px; 
 	height: 240px; 
 	content:'';
-	background: rgba(0,0,0,0.068);
+	background: rgba(0, 0, 0, 0.068);
 	/* Rotate */
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
@@ -123,7 +124,7 @@ body {
 }
 
 .page-heading > .caption {
-	color:rgba(255,255,255,0.4);
+	color: rgba(0, 0, 0, 0.4);
 	line-height:122px;
 	margin:0 15px 0 0;
 	padding:0;
